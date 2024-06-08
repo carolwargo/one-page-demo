@@ -2,19 +2,18 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import HomePage from "./pages/HomePage";
-import Blog from "./pages/Blog";
+import BlogPage from "./pages/BlogPage";
 import ErrorBoundary from "./components/ErrorBoundary";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/one-page-demo
-    ">
+      <BrowserRouter basename="/one-page-demo">
       <ErrorBoundary>
         <Routes>
           {/* Add a route for the home page */}
           <Route path="/" element={<HomePage />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog" element={<BlogPage />} />
           {/* Add a catch-all route for handling errors */}
           <Route path="*" element={<NotFound />} />
         </Routes>
