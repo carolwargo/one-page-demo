@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import HomePage from "./pages/HomePage";
+import Blog from "./pages/Blog";
 import ErrorBoundary from "./components/ErrorBoundary";
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
         <Routes>
           {/* Add a route for the home page */}
           <Route path="/" element={<HomePage />} />
-          <Route path="/homepage" element={<HomePage />} />
+          <Route path="/blog" element={<Blog />} />
           {/* Add a catch-all route for handling errors */}
           <Route path="*" element={<NotFound />} />
         </Routes>
