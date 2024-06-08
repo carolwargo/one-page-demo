@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import HomePage from "./pages/HomePage";
 import BlogPage from "./pages/BlogPage";
+import Header from "./components/Header/Header.jsx";
 import ErrorBoundary from "./components/ErrorBoundary";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div className="App">
       <BrowserRouter basename="/one-page-demo">
       <ErrorBoundary>
+        <Header/>
         <Routes>
           {/* Add a route for the home page */}
           <Route path="/" element={<HomePage />} />

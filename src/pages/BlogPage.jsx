@@ -3,6 +3,7 @@ import "../App.css";
 import "@fortawesome/fontawesome-free/css/all.css";
 import ProfileBG from "../assets/images/ProfileBG.png";
 import Clay2 from "../assets/images/Clay2.png";
+//import { FaImage } from "react-icons/fa6";
 
 const Blog = () => {
   return (

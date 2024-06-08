@@ -7,7 +7,7 @@ import { SiGooglehome } from "react-icons/si";
 //import { FaPhotoVideo } from "react-icons/fa";
 
 import "./header.css";
-import Logo from "../../assets/images/placeholders/Logo.png";
+import Logo from "../../assets/images/Logo.png";
 
 const Header = () => {
   return (
@@ -89,7 +89,7 @@ const Header = () => {
       </Navbar>
       <div
         id="intro-example"
-        className="p-4 bg-image position-relative"
+        className="w3-padding-64 bg-image position-relative"
         style={{
           backgroundImage: `url(${FenceBackground})`,
           backgroundSize: "cover", // Set the background size to cover the entire viewport
