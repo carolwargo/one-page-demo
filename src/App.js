@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.css";
 
 import HomePage from "./pages/HomePage";
 import ErrorBoundary from "./components/ErrorBoundary";
