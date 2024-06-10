@@ -39,11 +39,14 @@ React.useEffect(() => {
 
    {/** START ABOUT DIV*/}
    <div className="w3-white">
-        <div className=" w3-content">
-            <div className="container flex-container text-center align-items-center justify-content-center">
+      <div className=" w3-content">
+            <div className="text-center flex-container align-items-center justify-content-center">
             <br /><h1 >ABOUT <span className="w3-text-blue fw-bolder">CONSCRIBE</span>.</h1>
-            <h4 className="text-center align-items-center" >CONSCRIBE. offers fully-customized <b className="w3-text-blue fw-bolder">MARKETING STRATEGIES</b> for student-athletes that wish to remain or move on play at the next-level.       
-            </h4>
+            <hr />
+            <h3 className="align-items-center mb-4"> PROVIDING 
+<b className="w3-text-blue fw-bolder"> CONTROLLED MARKETING STRATEGIES</b> FOR STUDENT-ATHELETES. 
+         <br />Whether you need to find a new home or move on play at the next-level, be in control of your marketing.       
+            </h3>
             </div> 
 
  

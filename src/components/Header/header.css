@@ -5,3 +5,36 @@
     margin-bottom: 5px;
     font-size: .85rem;
   }
+
+  .glowing-brand {
+    text-shadow: 
+      0 0 5px #fff, /* Base shadow */
+      0 0 10px #fff, /* Additional glow */
+      0 0 15px #fff, /* More glow */
+      0 0 25px #000, /* Increasing glow */
+   
+      0 0 35px #000; /* Extended glow */
+    color: #fff; /* Text color for contrast */
+  }
+
+  .glowing-text {
+    text-shadow: 
+      0 0 5px #fff, /* Base shadow */
+      0 0 10px #fff, /* Additional glow */
+      0 0 15px #fff, /* More glow */
+      0 0 25px #000, /* Increasing glow */
+      0 0 35px #000; /* Extended glow */
+      color: #128efa; /* Text color for contrast */
+  }
+  
+  
+  .button-glow {
+    box-shadow: 
+      0 0 10px #7ec3ff, /* Additional glow */
+    
+      0 0 25px #fff, /* Increasing glow */
+   
+      0 0 35px lightskyblue; /* Extended glow */
+    color: #00f; /* Text color for contrast */
+  }
+  
