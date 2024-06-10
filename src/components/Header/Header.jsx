@@ -4,14 +4,28 @@ import FenceBackground from "../../assets/images/FenceBackground.png";
 import { Link } from "react-router-dom";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { SiGooglehome } from "react-icons/si";
-//import { FaPhotoVideo } from "react-icons/fa";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 import "./header.css";
 import Logo from "../../assets/images/Logo.png";
 
 const Header = () => {
+
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Animation triggers only once
+    threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
+  });
+
   return (
-    <header style={{fontFamily:'roboto', fontSize:'14px'}}>
+    <motion.div
+    ref={ref}
+    initial={{ y: 0, opacity: 0.8 }}
+    animate={inView ? { y: 0, opacity: 1 } : {}}
+    exit={{ y: 0, opacity: -0.8 }}
+    transition={{ duration: 1.6 }}
+    >
+    <header >
       <Navbar bg="light" expand="lg" className="navbar px-4">
       <Navbar.Brand href="/">
         <img
@@ -24,77 +38,64 @@ const Header = () => {
         <Navbar.Toggle aria-controls="navbarNavDropdown" />
         <Navbar.Collapse id="navbarNavDropdown">
           <Nav className="mr-auto align-items-center">
-            <Nav.Link href="/" className="nav-home-link">
-              H
+            <Link to="/" className="nav-home-link">
+              
               <span>
-                <SiGooglehome className="nav-home-link-span" />
+                <SiGooglehome className="nav-home-link-span" style={{fontSize:'1.5rem'}}/>
               </span>
-              ME
-            </Nav.Link>
+              
+            </Link>
+            <Link to="/" className="nav-link"> <span>
+                <SiGooglehome className="nav-home-link-span" style={{fontSize:'1.5rem'}}/>
+              </span></Link>
+            <Link to="/about" className="nav-link">ABOUT</Link>
+            <Link to="/services" className="nav-link">SERVICES</Link>
+            <Link to="/resources" className="nav-link">RESOURCES</Link>
+            <Link to="/demo" className="nav-link">DEMO</Link>
             <NavDropdown
               title="About"
               id="navbarDropdownMenuLink"
-              className="nav-about-dropdown"
-            >
+              className="nav-about-dropdown">
               <NavDropdown.Item as={Link} to="/about#who-we-are">Who We Are</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/about#our-values">Our Values</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/about#testimonials">
-                Testimonials
-              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/about#our-values">What We Do</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/about#testimonials">Why We Do It</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown
-              title="Events"
+              title="Services"
               id="navbarDropdownMenuLink"
               className="nav-camp-dropdown"
             >
-              <NavDropdown.Item href="/">General Info</NavDropdown.Item>
-              <NavDropdown.Item href="/">
-                Showcase Registration
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/">Camp Registration</NavDropdown.Item>
-            </NavDropdown>
+              <NavDropdown.Item href="/">Graphic Elements</NavDropdown.Item>
+              <NavDropdown.Item href="/">Recruit Website</NavDropdown.Item>
+          </NavDropdown>
 
             <NavDropdown
-              title="Success"
+              title="Resources"
               id="navbarDropdownMenuLink"
-              className="camp-dropdown"
+              className="resource-dropdown"
             >
-              <NavDropdown.Item href="/success">Players Drafted</NavDropdown.Item>
-              <NavDropdown.Item href="/success">Players Signed</NavDropdown.Item>
-            </NavDropdown>
-
-            <NavDropdown
-              title="Exposure"
-              id="navbarDropdownMenuLink"
-              className="exposure-dropdown"
-            >
-              <NavDropdown.Item href="/exposure#guest-speakers">Guest Speakers</NavDropdown.Item>
-              <NavDropdown.Item href="/exposure#coaching-staff">Coaching Staff</NavDropdown.Item>
-              <NavDropdown.Item href="/exposure#colleges">Colleges Represented</NavDropdown.Item>
-              <NavDropdown.Item href="/exposure#conference">Conferences Represented</NavDropdown.Item>
+            <Link to='resources' className="nav-link">Blog</Link>
+            <Link to='resources' className="nav-link">FAQS</Link>
+            <Link to='resources' className="nav-link">Links</Link>
+            <Link to='resources' className="nav-link">Articles</Link>
+            
             </NavDropdown>
 
             <Nav.Link href="/contact" className="nav-link-contact">
               Contact
-            </Nav.Link>
-
-            <Nav.Link href="/site" className="nav-link-site">
-              Site
-            </Nav.Link>
-            <Nav.Link href="/daly-blog" className="nav-link-site">
-            DB
-            </Nav.Link>
-          </Nav>
+            </Nav.Link> </Nav>
           </Navbar.Collapse>
       </Navbar>
       <div
         id="intro-example"
-        className="w3-padding-64 bg-image position-relative"
+        className="bg-image position-relative"
         style={{
           backgroundImage: `url(${FenceBackground})`,
           backgroundSize: "cover", // Set the background size to cover the entire viewport
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed", // Optional: Keep the background fixed while scrolling
+        paddingTop: "7rem",
+        paddingBottom: "7rem",
         }}
       >
         {/* Overlay div for masking */}
@@ -126,6 +127,7 @@ const Header = () => {
        
       </div>
     </header>
+    </motion.div>
   );
 };
 

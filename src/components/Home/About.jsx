@@ -8,7 +8,7 @@ import {
     MDBRow,
     MDBCol
   } from 'mdb-react-ui-kit';
-  
+  import Clay2 from "../../assets/images/Clay2.png";
 
 const About = () => {
     
@@ -20,8 +20,8 @@ const About = () => {
         <MDBCard style={{ maxWidth: '540px' }}>
       <MDBRow className='g-0'>
         <MDBCol md='6'>
-          <MDBCardImage src='https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.webp' alt='...' fluid style={{width:'100%'}}/>
-        </MDBCol>
+        <MDBCardImage src={Clay2} alt='...' fluid />
+         </MDBCol>
         <MDBCol md='6'>
           <MDBCardBody>
             <MDBCardTitle>Card title</MDBCardTitle>
@@ -42,7 +42,7 @@ const About = () => {
         <MDBCard style={{ maxWidth: '540px' }}>
       <MDBRow className='g-0'>
         <MDBCol md='6'>
-          <MDBCardImage src='https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.webp' alt='...' fluid />
+          <MDBCardImage src={Clay2} alt='...' fluid />
         </MDBCol>
         <MDBCol md='6'>
           <MDBCardBody>
@@ -65,7 +65,7 @@ const About = () => {
         <MDBCard style={{ maxWidth: '540px' }}>
       <MDBRow className='g-0'>
         <MDBCol md='6'>
-          <MDBCardImage src='https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.webp' alt='...' fluid />
+          <MDBCardImage src={Clay2} alt='...' fluid />
         </MDBCol>
         <MDBCol md='6'>
           <MDBCardBody>
@@ -84,10 +84,10 @@ const About = () => {
             </MDBCol>
             
             <MDBCol sm={12} md={6}>
-            <MDBCard style={{ maxWidth: '540px' }}>
+            <MDBCard style={{ maxWidth: '540px'}} className="w3-black">
       <MDBRow className='g-0'>
         <MDBCol md='6'>
-          <MDBCardImage src='https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.webp' alt='...' fluid />
+          <MDBCardImage src={Clay2} alt='...' fluid  className="w3-round-xlarge px-0 shadow"/>
         </MDBCol>
         <MDBCol md='6'>
           <MDBCardBody>

@@ -7,7 +7,7 @@ import TextTransition, {presets} from "react-text-transition";
 const TEXTS = [ 'TRANSFER PORTAL PLAYERS', 'HIGH SCHOOL RECRUITS',];
   
 
-const HomePage = () => {
+const AboutPage = () => {
   const { ref, inView } = useInView({
     triggerOnce: false, // Animation triggers only once
     threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
@@ -49,8 +49,11 @@ React.useEffect(() => {
  
   
         <div className="row justify-content-center align-items-center w3-padding-large w3-row-padding">
-         
-         <div className="col-sm-12 col-md-7 col-lg-7">  
+         <div className="col-sm-12 col-md-5 col-lg-5"> 
+            <img src={Clay2} alt="clay" style={{ width: "100%" }} />
+         </div>
+         <div className="col-sm-12 col-md-7 col-lg-7">
+            
           <h3><span className="w3-text-blue"><b>RECRUITMENT</b></span> IS PART OF THE PROCESS WHETHER WE LIKE IT OR NOT!</h3>
          <br />
          <TextTransition springConfig={presets.gentle}>
@@ -63,9 +66,6 @@ React.useEffect(() => {
        
        
         </div>
-        <div className="col-sm-12 col-md-5 col-lg-5"> 
-            <img src={Clay2} alt="clay" style={{ width: "100%" }} />
-         </div>
         </div>
         </div>
       </div>
@@ -85,7 +85,7 @@ React.useEffect(() => {
   );
 };
 
-export default HomePage;
+export default AboutPage;
 
 /** 
 <div className="row justify-content-center align-items-center w3-padding-large">

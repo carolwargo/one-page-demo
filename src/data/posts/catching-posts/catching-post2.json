@@ -1,0 +1,9 @@
+{
+    "id": 2,
+    "title": "Second Blog Post",
+    "author": "John Doe",
+    "timestamp": "moment().toISOString()",
+    "imageUrl": "YogaSet",
+    "content": "This is the content of the first blog post..."
+  }
+  
