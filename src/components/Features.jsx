@@ -1,6 +1,8 @@
 import React from "react";
 import '../styles/features.css';
-
+import unsplash1 from '../assets/images/unsplash1.jpg';
+import unsplash2 from '../assets/images/unsplash2.jpg';
+import unsplash3 from '../assets/images/unsplash3.jpg';
 
 const Features = () => {
     return (
@@ -280,7 +282,7 @@ const Features = () => {
 
     <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
       <div className="col">
-        <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style={{backgroundImage: "url('unsplash-photo-1.jpg')"}}>
+        <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style={{ backgroundImage: `url(${unsplash3})` }}>
           <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <h3 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
             <ul className="d-flex list-unstyled mt-auto">
@@ -301,7 +303,7 @@ const Features = () => {
       </div>
 
       <div className="col">
-        <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style={{backgroundImage: "url('/assets/images/unsplash-photo-2.jpg')"}}>
+        <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"  style={{ backgroundImage: `url(${unsplash1})` }}>
           <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <h3 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
             <ul className="d-flex list-unstyled mt-auto">
@@ -322,7 +324,7 @@ const Features = () => {
       </div>
 
       <div className="col">
-        <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style={{backgroundImage: "url('unsplash-photo-3.jpg')"}}>
+        <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style={{ backgroundImage: `url(${unsplash2})` }}>
           <div className="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
             <h3 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
             <ul className="d-flex list-unstyled mt-auto">
