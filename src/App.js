@@ -5,23 +5,26 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./components/Home/About";
 import ResourcesPage from "./pages/ResourcesPage.jsx";
 import DemoPage from './pages/DemoPage.jsx';
-import Header from "./components/Header/Header.jsx";
+import MegaMenu from './components/Nav/MegaMenu.jsx';
 import ErrorBoundary from "./components/ErrorBoundary";
-import Services from "./pages/ServicesPage.jsx";
+import ServicesPage from "./pages/ServicesPage.jsx";
+import TestPage from "./pages/Test.jsx";
+
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter basename="/one-page-demo">
       <ErrorBoundary>
-        <Header/>
+     <MegaMenu />
         <Routes>
           {/* Add a route for the home page */}
           <Route path="/" element={<HomePage />} />
           <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/about" element={<AboutPage/>} />
           <Route path="/demo" element={<DemoPage />} />
-          <Route path="/services" element={<Services />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/test" element={<TestPage />} />
           {/* Add a catch-all route for handling errors */}
           <Route path="*" element={<NotFound />} />
         </Routes>

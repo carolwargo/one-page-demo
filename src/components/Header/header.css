@@ -1,10 +1,12 @@
-
-
 .nav-home-link-span {
     color: red;
     margin-bottom: 5px;
     font-size: .85rem;
   }
+
+  .toggle-button {
+    background-color: black;
+  } 
 
   .glowing-brand {
     text-shadow: 
