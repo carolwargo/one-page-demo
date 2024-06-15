@@ -5,7 +5,7 @@ import '../styles/pricing.css';
 const Pricing = () => {
     return (
       <div>
-        <style jsx>{`
+        <style>{`
           .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;

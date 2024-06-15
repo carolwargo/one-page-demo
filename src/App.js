@@ -5,9 +5,10 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./components/Home/About";
 import ResourcesPage from "./pages/ResourcesPage.jsx";
 import DemoPage from './pages/DemoPage.jsx';
-import MegaMenu from './components/Nav/MegaMenu.jsx';
+import TopNav from './components/Nav/TopNav.jsx';
 import ErrorBoundary from "./components/ErrorBoundary";
 import ServicesPage from "./pages/ServicesPage.jsx";
+//import MainPage from "./pages/MainPage.jsx";
 import TestPage from "./pages/Test.jsx";
 
 
@@ -16,7 +17,7 @@ function App() {
     <div className="App">
       <BrowserRouter basename="/one-page-demo">
       <ErrorBoundary>
-     <MegaMenu />
+     <TopNav/>
         <Routes>
           {/* Add a route for the home page */}
           <Route path="/" element={<HomePage />} />

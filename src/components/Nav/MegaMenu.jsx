@@ -5,40 +5,44 @@ import {
   MDBNavbar,
   MDBNavbarNav,
   MDBDropdown,
+  MDBNavbarBrand,
   MDBDropdownToggle,
   MDBDropdownMenu,
   MDBListGroup,
   MDBListGroupItem,
   MDBRow,
-  MDBIcon
+  MDBIcon,
 } from 'mdb-react-ui-kit';
+import LogoTrans from '../../assets/images/LogoTrans.png';
 import { Link } from 'react-router-dom';
 
 export default function App() {
   return (
+
+    
     <MDBNavbar expand='xlg' light style={{ backgroundColor: '#e3f2fd' }}>
       <MDBContainer fluid>
-        <MDBNavbarNav className='me-auto' style={{ paddingLeft: '0.15rem' }}>
-         
-            <Link active aria-current='page' href='#'>
-              Regular link
+     
+        <MDBNavbarNav className='mr-auto mb-2 mb-lg-0' style={{ paddingLeft: '0.15rem' }}>
+        <MDBNavbarBrand>
+        <Link to='/'>
+            <img
+              src={LogoTrans}
+              height='35'
+              alt='logo'
+              loading='lazy'
+            />
             </Link>
-   
+          </MDBNavbarBrand>
             <MDBDropdown>
-              <MDBDropdownToggle tag='a' className='nav-link border-none'>
+              <MDBDropdownToggle tag='a' className='nav-link'>
                 Mega menu
               </MDBDropdownToggle>
-              <MDBDropdownMenu
-                className='mt-0 w-100 justify-content-center'
-                style={{
-                  borderTopLeftRadius: '0',
-                  borderTopRightRadius: '0',
-                }}
-              >
+              <MDBDropdownMenu>
                 <MDBContainer>
-                  <MDBRow className='my-4'>
+                  <MDBRow className='my-4  border-none'>
                     <MDBCol md='6' lg='3' className='mb-3 mb-lg-0'>
-                      <MDBListGroup>
+                      <MDBListGroup className='border-none'>
                         <MDBListGroupItem className='text-uppercase' tag='a' href='#' action>
                           Lorem ipsum
                         </MDBListGroupItem>
