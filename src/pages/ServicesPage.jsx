@@ -252,7 +252,7 @@ const Services = () => {
         <div>
           <h3 className="fs-2 text-body-emphasis">Featured title</h3>
           <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-          <a href="/" className="btn btn-primary">
+          <a href="/" className="btn" style={{backgroundColor:"#00BAFF", color:'white'}}>
             Primary button
           </a>
         </div>
@@ -264,7 +264,7 @@ const Services = () => {
         <div>
           <h3 className="fs-2 text-body-emphasis">Featured title</h3>
           <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-          <a href="/" className="btn btn-primary">
+          <a href="/" className="btn" style={{backgroundColor: '#21D7E8'}}>
             Primary button
           </a>
         </div>

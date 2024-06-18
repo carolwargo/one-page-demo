@@ -1,112 +1,77 @@
 import React from "react";
-import {
-    MDBCard,
-    MDBCardTitle,
-    MDBCardText,
-    MDBCardBody,
-    MDBCardImage,
-    MDBRow,
-    MDBCol
-  } from 'mdb-react-ui-kit';
-  import Clay2 from "../../assets/images/Clay2.png";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { ListGroup } from 'react-bootstrap';
+import Clay2 from "../../assets/images/Clay2.png";
 
 const About = () => {
-    
-        return (
-            <div className="w3-padding-64">
-            <h1>About</h1>
-<MDBRow className="w3-margin">
-        <MDBCol sm={12} md={6}>
-        <MDBCard style={{ maxWidth: '540px' }}>
-      <MDBRow className='g-0'>
-        <MDBCol md='6'>
-        <MDBCardImage src={Clay2} alt='...' fluid />
-         </MDBCol>
-        <MDBCol md='6'>
-          <MDBCardBody>
-            <MDBCardTitle>Card title</MDBCardTitle>
-            <MDBCardText>
-              This is a wider card with supporting text below as a natural lead-in to additional content. This
-              content is a little bit longer.
-            </MDBCardText>
-            <MDBCardText>
-              <small className='text-muted'>Last updated 3 mins ago</small>
-            </MDBCardText>
-          </MDBCardBody>
-        </MDBCol>
-      </MDBRow>
-    </MDBCard>
-            </MDBCol>
-            
-            <MDBCol sm={12} md={6}>
-        <MDBCard style={{ maxWidth: '540px' }}>
-      <MDBRow className='g-0'>
-        <MDBCol md='6'>
-          <MDBCardImage src={Clay2} alt='...' fluid />
-        </MDBCol>
-        <MDBCol md='6'>
-          <MDBCardBody>
-            <MDBCardTitle>Card title</MDBCardTitle>
-            <MDBCardText>
-              This is a wider card with supporting text below as a natural lead-in to additional content. This
-              content is a little bit longer.
-            </MDBCardText>
-            <MDBCardText>
-              <small className='text-muted'>Last updated 3 mins ago</small>
-            </MDBCardText>
-          </MDBCardBody>
-        </MDBCol>
-      </MDBRow>
-    </MDBCard>
-            </MDBCol>
-</MDBRow>
-<MDBRow>
-<MDBCol sm={12} md={6}>
-        <MDBCard style={{ maxWidth: '540px' }}>
-      <MDBRow className='g-0'>
-        <MDBCol md='6'>
-          <MDBCardImage src={Clay2} alt='...' fluid />
-        </MDBCol>
-        <MDBCol md='6'>
-          <MDBCardBody>
-            <MDBCardTitle>Card title</MDBCardTitle>
-            <MDBCardText>
-              This is a wider card with supporting text below as a natural lead-in to additional content. This
-              content is a little bit longer.
-            </MDBCardText>
-            <MDBCardText>
-              <small className='text-muted'>Last updated 3 mins ago</small>
-            </MDBCardText>
-          </MDBCardBody>
-        </MDBCol>
-      </MDBRow>
-    </MDBCard>
-            </MDBCol>
-            
-            <MDBCol sm={12} md={6}>
-            <MDBCard style={{ maxWidth: '540px'}} className="w3-black">
-      <MDBRow className='g-0'>
-        <MDBCol md='6'>
-          <MDBCardImage src={Clay2} alt='...' fluid  className="w3-round-xlarge px-0 shadow"/>
-        </MDBCol>
-        <MDBCol md='6'>
-          <MDBCardBody>
-            <MDBCardTitle>Card title</MDBCardTitle>
-            <MDBCardText>
-              This is a wider card with supporting text below as a natural lead-in to additional content. This
-              content is a little bit longer.
-            </MDBCardText>
-            <MDBCardText>
-              <small className='text-muted'>Last updated 3 mins ago</small>
-            </MDBCardText>
-          </MDBCardBody>
-        </MDBCol>
-      </MDBRow>
-    </MDBCard>
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Animation triggers only once
+    threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
+  });
 
-            </MDBCol>
-</MDBRow>
-  
+
+  return (
+    <div>
+    <motion.div
+      ref={ref}
+      initial={{ y: -40, opacity: 0.5 }}
+      animate={inView ? { y: 0, opacity: 1 } : {}}
+      exit={{ y: 40, opacity: 0.5 }}
+      transition={{ duration: 0.8 }}
+      className="w3-padding-64"
+    >
+     <div className="w3-container w3-content">
+             <h1 className='mb-3' 
+             style={{fontSize:"5rem"}}>About Con
+             <span style={{fontFamily:"Dancing Script"}}>Scribe</span>
+             </h1>
+            
+<div className="row d-flex justify-content-center align-items-center">
+        <div className="col-sm-12 col-md-6 col-sm-6">
+          <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque sed hic delectus! Sit voluptatem dolorum iusto laudantium! Quis, quo quidem quod quasi magnam expedita odio cumque iusto libero repellat alias.</p>
+            </div>
+            <div className="col-sm-12 col-md-6 col-sm-6">
+            <ListGroup as="ol" style={{ borderRadius: '0px' }} className="d-flex align-items-center justify-content-center">
+      <ListGroup.Item as="li" className="mb-2 px-3">
+        <div className="row align-items-center">
+          <div className="col-sm-4 col-md-4 col-lg-4">
+            <img src={Clay2} alt='clay' style={{ width: '100%' }} />
+          </div>
+          <div className="col-sm-8 col-md-8 col-lg-8 mt-3" style={{ fontSize: '14px' }}>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quisquam cumque rem. Quaerat nemo alias corporis sapiente nisi debitis, cum officia quod ea porro dolor quia dolorum explicabo eveniet obcaecati!</p>
+          </div>
+        </div>
+      </ListGroup.Item>
+
+      <ListGroup.Item as="li" className="mb-2 px-3">
+        <div className="row align-items-center">
+          <div className="col-sm-4 col-md-4 col-lg-4">
+            
+            <img src={Clay2} alt='clay' style={{ width: '100%' }} />
+          </div>
+          <div className="col-sm-8 col-md-8 col-lg-8 mt-3" style={{ fontSize: '14px' }}>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quisquam cumque rem. Quaerat nemo alias corporis sapiente nisi debitis, cum officia quod ea porro dolor quia dolorum explicabo eveniet obcaecati!</p>
+          </div>
+        </div>
+      </ListGroup.Item>
+
+      <ListGroup.Item as="li" className="mb-2 px-3">
+        <div className="row align-items-center">
+          <div className="col-sm-4 col-md-4 col-lg-4">
+            <img src={Clay2} alt='clay' style={{ width: '100%' }} />
+          </div>
+          <div className="col-sm-8 col-md-8 col-lg-8 mt-3" style={{ fontSize: '14px' }}>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quisquam cumque rem. Quaerat nemo alias corporis sapiente nisi debitis, cum officia quod ea porro dolor quia dolorum explicabo eveniet obcaecati!</p>
+          </div>
+        </div>
+      </ListGroup.Item>
+    </ListGroup>
+            </div>
+</div>
+</div>
+</motion.div>
         </div>
     
         );

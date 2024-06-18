@@ -4,7 +4,8 @@ import About from "../components/Home/About";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import TextTransition, {presets} from "react-text-transition";
-const TEXTS = [ 'TRANSFER PORTAL PLAYERS', 'HIGH SCHOOL RECRUITS',];
+import Services from "../components/Home/Services";
+const TEXTS = [ 'NCAA TRANSFERS', 'HIGH SCHOOL RECRUITS','TEAMS & COACHES'];
   
 
 const HomePage = () => {
@@ -26,31 +27,34 @@ React.useEffect(() => {
 , []);
 
   return (
+  
     <motion.div
       ref={ref}
-      initial={{ y: -40, opacity: 0.5 }}
+      initial={{ y: -20, opacity: 0.5 }}
       animate={inView ? { y: 0, opacity: 1 } : {}}
-      exit={{ y: 40, opacity: 0.5 }}
+      exit={{ y: 20, opacity: 0.5 }}
       transition={{ duration: 0.8 }}
-      className="w3-padding-64"
+     
     >
 
         {/** START ABOUT DIV*/}
 
    {/** START ABOUT DIV*/}
-   <div className="w3-white">
-      <div className=" w3-content w3-padding-16">
+   <div className="w3-light-gray">
+      <div className=" w3-content w3-padding-48">
             <div className="text-center flex-container align-items-center justify-content-center">
-            <br /><h1 >ABOUT <span className="w3-text-blue fw-bolder">CONSCRIBE</span>.</h1>
+            <br />  
+            <h1 className='mb-3' >About <span style={{fontSize:"5rem"}} className="fw-bold">Con</span><span  style={{fontFamily:"Dancing Script", fontSize:"5rem"}}>Scribe</span></h1>
             <hr />
-            <h5 className="text-black">Whether you're an established player 
-          entering the transfer portal or a high school athlete aiming to 
-          play at the next level, we empower you through the process with 
-          high-quality content that you control. </h5>
+     
             <h3 className="align-items-center mb-4"> PROVIDING 
 <b className="w3-text-blue fw-bolder"> CONTROLLED MARKETING STRATEGIES</b> FOR STUDENT-ATHELETES. 
          <br />Whether you need to find a new home or move on play at the next-level, be in control of your marketing.       
             </h3>
+            <h5 className="text-black">Whether you're an established player 
+          entering the transfer portal or a high school athlete aiming to 
+          play at the next level, we empower you through the process with 
+          high-quality content that you control. </h5>
             </div> 
 
  
@@ -85,7 +89,9 @@ React.useEffect(() => {
         <About />
       </div>
         {/** END ABOUT DIV*/}
-      <div className="container-fluid"></div>
+      <div className="container-fluid">
+        <Services />
+      </div>
       <div className="container-fluid w3-blue"></div>
       <div className="container-fluid"></div>
     </motion.div>

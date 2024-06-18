@@ -10,14 +10,15 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import ServicesPage from "./pages/ServicesPage.jsx";
 //import MainPage from "./pages/MainPage.jsx";
 import TestPage from "./pages/Test.jsx";
-
+import Header2 from "./components/Header/Header2.jsx";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter basename="/one-page-demo">
       <ErrorBoundary>
-     <TopNav/>
+   <TopNav/>
+      <Header2/>
         <Routes>
           {/* Add a route for the home page */}
           <Route path="/" element={<HomePage />} />
