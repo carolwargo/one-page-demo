@@ -42,7 +42,7 @@ const TopNavbar = () => {
 
           <Link to="/about" className="nav-link" style={{ color: "black" }}  onClick={handleNavLinkClick}>About</Link>
            <Link to="/resources" className="nav-link" style={{ color: "black" }}  onClick={handleNavLinkClick}>Resources</Link>
-            <Link to="/test" className="nav-link" style={{ color: "black" }}  onClick={handleNavLinkClick}>Test</Link>
+           <Link to="/services" className="nav-link" style={{ color: "black" }}  onClick={handleNavLinkClick}>Pricing</Link>
             
             <NavDropdown
               title="Services"
@@ -52,15 +52,16 @@ const TopNavbar = () => {
               show={isHovered}
             >
               <div style={{ borderRadius: '5px' }} className="shadow">
+                  <NavDropdown.Item 
+                as={Link} to="/web" className="text-black">Websites
+                </NavDropdown.Item>
                 <NavDropdown.Item 
-                as={Link} to="/resources" className="text-black">Resources</NavDropdown.Item>
+                as={Link} to="/graphics" className="text-black">Graphics
+                </NavDropdown.Item>
                 <NavDropdown.Item 
-                as={Link} to="/main" className="text-black">Main</NavDropdown.Item>
-                <NavDropdown.Item 
-                as={Link} to="/services" className="text-black">Services</NavDropdown.Item>
-                <NavDropdown.Item 
-                as={Link} to="/demo" className="text-black">Graphics Page</NavDropdown.Item>
-              </div>
+                as={Link} to="/social" className="text-black">Social Media
+                </NavDropdown.Item>
+        </div>
             </NavDropdown>
           </Nav>
 

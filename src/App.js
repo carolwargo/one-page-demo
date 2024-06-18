@@ -8,6 +8,9 @@ import DemoPage from './pages/DemoPage.jsx';
 import TopNav from './components/Nav/TopNav.jsx';
 import ErrorBoundary from "./components/ErrorBoundary";
 import ServicesPage from "./pages/ServicesPage.jsx";
+import GraphicsPage from "./pages/GraphicsPage.jsx";
+import WebPage from "./pages/WebPage.jsx";
+import SocialPage from "./pages/SocialPage.jsx";
 //import MainPage from "./pages/MainPage.jsx";
 import TestPage from "./pages/Test.jsx";
 import Header2 from "./components/Header/Header2.jsx";
@@ -27,6 +30,9 @@ function App() {
           <Route path="/demo" element={<DemoPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/test" element={<TestPage />} />
+          <Route path="/graphics" element={<GraphicsPage />} />
+          <Route path="/web" element={<WebPage />} />
+          <Route path="/social" element={<SocialPage />} />
           {/* Add a catch-all route for handling errors */}
           <Route path="*" element={<NotFound />} />
         </Routes>
