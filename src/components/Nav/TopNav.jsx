@@ -59,7 +59,7 @@ const TopNavbar = () => {
                 as={Link} to="/graphics" className="text-black">Graphics
                 </NavDropdown.Item>
                 <NavDropdown.Item 
-                as={Link} to="/social" className="text-black">Social Media
+                as={Link} to="/social" className="text-black">Content Management
                 </NavDropdown.Item>
         </div>
             </NavDropdown>

@@ -1,0 +1,78 @@
+import React from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import Catch from '../../assets/images/Catch.png';
+import Hit from '../../assets/images/Hit.png';
+
+
+
+const HomeCards = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Animation triggers only once
+    threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
+  });
+
+    return (
+      <div  className="container-fluid w3-pale-red">
+<motion.div
+      ref={ref}
+      initial={{ y: -20, opacity: 0.5 }}
+      animate={inView ? { y: 0, opacity: 1 } : {}}
+      exit={{ y: 20, opacity: 0.5 }}
+      transition={{ duration: 0.8 }}
+       className="w3-padding-32"
+    >
+             <div className='w3-container w3-content text-center mb-2'>
+  <h2 className='text-center w3-text-pink'><b>THINK OF THE POSSIBILITIES!</b></h2>
+  <h3>Responsive image styling examples that enhance visual appeal without complicating or compromising function.</h3>
+  </  div>
+
+<div className="row d-flex justify-content-center align-items-center w3-padding-large w3-padding-24">
+  <div className=" col-sm-12 col-md-4 col-lg-4 flex-column position-relative p-0">
+    {/* Image Container */}
+    <div className="position-relative">
+      <img src={Catch} alt="girlcamera" style={{ width: '100%' }} className=" shadow shadow-5-strong hover-shadow w3-hover-pink" />
+      {/* Dark Overlay */}
+      <div className="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-70  shadow shadow-5-strong  w3-hover-pink"></div>
+    </div>
+    {/* Text */}
+    <div className="position-absolute top-50 start-50 translate-middle text-white text-center">
+      <h2>Text on Top</h2>
+      <p>This is the text overlaid on the image.</p>
+    </div>
+  </div>
+  <div className=" col-sm-12 col-md-4 col-lg-4 flex-column position-relative p-0">
+    {/* Image Container */}
+    <div className="position-relative">
+      <img src={Hit} alt="girlcamera" style={{ width: '100%' }} className=" shadow shadow-5-strong hover-shadow w3-hover-pink" />
+      {/* Dark Overlay */}
+      <div className="position-absolute top-0 start-0 w-100 h-100 bg-secondary opacity-70  shadow shadow-5-strong  w3-hover-pink"></div>
+    </div>
+    {/* Text */}
+    <div className="position-absolute top-50 start-50 translate-middle text-white text-center">
+      <h2>Text on Top</h2>
+      <p>This is the text overlaid on the image.</p>
+    </div>
+  </div>
+  <div className=" col-sm-12 col-md-4 col-lg-4 flex-column position-relative p-0">
+    {/* Image Container */}
+    <div className="position-relative">
+      <img src={Catch} alt="girlcamera" style={{ width: '100%' }} className=" shadow shadow-5-strong hover-shadow w3-hover-pink" />
+      {/* Dark Overlay */}
+      <div className="position-absolute top-0 start-0 w-100 h-100 bg-white opacity-70  shadow shadow-5-strong  w3-hover-pink"></div>
+    </div>
+    {/* Text */}
+    <div className="position-absolute top-50 start-50 translate-middle text-black text-center">
+      <h2>Text on Top</h2>
+      <p>This is the text overlaid on the image.</p>
+    </div>
+  </div>
+</div>
+
+     </motion.div>
+      </div>
+
+    )
+}
+
+export default HomeCards

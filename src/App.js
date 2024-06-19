@@ -11,7 +11,7 @@ import ServicesPage from "./pages/ServicesPage.jsx";
 import GraphicsPage from "./pages/GraphicsPage.jsx";
 import WebPage from "./pages/WebPage.jsx";
 import SocialPage from "./pages/SocialPage.jsx";
-//import MainPage from "./pages/MainPage.jsx";
+import Footer from "./components/Footer.jsx";
 import TestPage from "./pages/Test.jsx";
 import Header2 from "./components/Header/Header2.jsx";
 
@@ -36,6 +36,7 @@ function App() {
           {/* Add a catch-all route for handling errors */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer/>
         </ErrorBoundary>
       </BrowserRouter>
     </div>
