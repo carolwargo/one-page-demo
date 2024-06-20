@@ -5,12 +5,11 @@ import { useInView } from "react-intersection-observer";
 import { ListGroup } from 'react-bootstrap';
 //import Clay2 from "../../assets/images/Clay2.png";
 import about from '../../assets/images/about.png';   
-import { PiNumberSquareOneFill  } from "react-icons/pi";
-import { PiNumberSquareTwoFill } from "react-icons/pi";
-import { PiNumberSquareThreeFill } from "react-icons/pi";
-import { PiNumberSquareFourFill } from "react-icons/pi";
-import { PiNumberSquareFiveFill } from "react-icons/pi";
-import { PiNumberSquareSixFill } from "react-icons/pi";
+import { PiNumberSquareTwo } from "react-icons/pi";
+import { PiNumberSquareThree } from "react-icons/pi";
+import { PiNumberSquareFour } from "react-icons/pi";
+import { PiNumberSquareFive } from "react-icons/pi";
+import { PiNumberSquareSix } from "react-icons/pi";
 
 const Stats = () => {
   const { ref, inView } = useInView({
@@ -46,7 +45,8 @@ const Stats = () => {
         </div>
         <div className="col-sm-12 col-md-6 col-lg-6">
          
-          <img src={about} alt="about" style={{ width: "100%" }}  className='w3-opacity w3-hover-opacity-off w3-greyscale'/>
+          <img src={about} alt="about" style={{ width: "100%" }}  
+          className='rounded shadow'/>
         </div>
       </div>
       </div>
@@ -55,81 +55,79 @@ const Stats = () => {
  {/**Start STATS List Group container*/}
 <div className="w3-container w3-content">
 <div className="row d-flex justify-content-center align-items-center">
-<div className="col-sm-12 col-md-6 col-sm-6">
-            <ListGroup as="ol" style={{ borderRadius: '0px' }} className="d-flex align-items-center justify-content-center">
-      <ListGroup.Item as="li" className="mb-2 px-3">
-        <div className="row justify-content-end align-items-center">
-          <div className="col-sm-4 col-md-4 col-lg-4">
-            < PiNumberSquareOneFill style={{ fontSize:'10rem', color:'black' }} />
-          </div>
-          <div className="col-sm-8 col-md-8 col-lg-8 mt-3" style={{ fontSize: '14px' }}>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quisquam cumque rem. Quaerat nemo alias corporis sapiente nisi debitis, cum officia quod ea porro dolor quia dolorum explicabo eveniet obcaecati!</p>
-          </div>
-        </div>
-      </ListGroup.Item>
+        <div className="col-sm-12 col-md-6">
+          <ListGroup as="ol" style={{ borderRadius: '0px' }} className="d-flex align-items-center justify-content-center">
+            <ListGroup.Item as="li" className="my-3">
+              <div className="row justify-content-end align-items-center">
+                <div className="col-3">
+                  <h1 style={{ fontSize: '5rem', color: 'black' }}>7%</h1> 
+                </div>
+                <div className="col-9 mt-3" style={{ fontSize: '14px' }}>
+                  <p>College sports recruitment figures show that only about 7% of high school student-athletes end up competing in the NCAA. The latest data shows that from 7,200,000 high school athletes from all NCAA sports, just under 500,000 make it to the NCAA. And if you think that’s low, only about 2% of that 7% make it into the professional arena.</p>
+                </div>
+              </div>
+            </ListGroup.Item>
 
-      <ListGroup.Item as="li" className="mb-2 px-3">
-        <div className="row align-items-center">
-          <div className="col-sm-4 col-md-4 col-lg-4">
-            
-            < PiNumberSquareTwoFill style={{ fontSize:'10rem', color:'black' }} />
-          </div>
-          <div className="col-sm-8 col-md-8 col-lg-8 mt-3" style={{ fontSize: '14px' }}>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quisquam cumque rem. Quaerat nemo alias corporis sapiente nisi debitis, cum officia quod ea porro dolor quia dolorum explicabo eveniet obcaecati!</p>
-          </div>
-        </div>
-      </ListGroup.Item>
+            <ListGroup.Item as="li" className="my-3">
+              <div className="row align-items-center">
+                <div className="col-3">
+                  <PiNumberSquareTwo style={{ fontSize: '5rem', color: 'black' }} />
+                </div>
+                <div className="col-9 mt-3" style={{ fontSize: '14px' }}>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quisquam cumque rem. Quaerat nemo alias corporis sapiente nisi debitis, cum officia quod ea porro dolor quia dolorum explicabo eveniet obcaecati!</p>
+                </div>
+              </div>
+            </ListGroup.Item>
 
-      <ListGroup.Item as="li" className="mb-2 px-3">
-        <div className="row align-items-center">
-          <div className="col-sm-4 col-md-4 col-lg-4">
-            <PiNumberSquareThreeFill style={{ fontSize:'10rem', color:'black' }} />
-          </div>
-          <div className="col-sm-8 col-md-8 col-lg-8 mt-3" style={{ fontSize: '14px' }}>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quisquam cumque rem. Quaerat nemo alias corporis sapiente nisi debitis, cum officia quod ea porro dolor quia dolorum explicabo eveniet obcaecati!</p>
-          </div>
+            <ListGroup.Item as="li" className="my-3">
+              <div className="row align-items-center">
+                <div className="col-3">
+                  <PiNumberSquareThree style={{ fontSize: '5rem', color: 'black' }} />
+                </div>
+                <div className="col-9 mt-3" style={{ fontSize: '14px' }}>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quisquam cumque rem. Quaerat nemo alias corporis sapiente nisi debitis, cum officia quod ea porro dolor quia dolorum explicabo eveniet obcaecati!</p>
+                </div>
+              </div>
+            </ListGroup.Item>
+          </ListGroup>
         </div>
-      </ListGroup.Item>
-    </ListGroup>
-            </div>
-            <div className="col-sm-12 col-md-6 col-sm-6">
-            <ListGroup as="ol" style={{ borderRadius: '0px' }} className="d-flex align-items-center justify-content-center">
-      <ListGroup.Item as="li" className="mb-2 px-3">
-        <div className="row align-items-center">
-          <div className="col-sm-4 col-md-4 col-lg-4">
-            <PiNumberSquareFourFill style={{ fontSize:'10rem', color:'black' }} />
-          </div>
-          <div className="col-sm-8 col-md-8 col-lg-8 mt-3" style={{ fontSize: '14px' }}>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quisquam cumque rem. Quaerat nemo alias corporis sapiente nisi debitis, cum officia quod ea porro dolor quia dolorum explicabo eveniet obcaecati!</p>
-          </div>
-        </div>
-      </ListGroup.Item>
+        <div className="col-sm-12 col-md-6">
+          <ListGroup as="ol" style={{ borderRadius: '0px' }} className="d-flex align-items-center justify-content-center">
+            <ListGroup.Item as="li" className="my-3">
+              <div className="row align-items-center">
+                <div className="col-3">
+                  <PiNumberSquareFour style={{ fontSize: '5rem', color: 'black' }} />
+                </div>
+                <div className="col-9 mt-3" style={{ fontSize: '14px' }}>
+                  <p>lit. Reprehenderit quisquam cumque rem. Quaerat nemo alias corporis sapiente nisi debitis, cum officia quod ea porro dolor quia dolorum explicabo eveniet obcaecati!</p>
+                </div>
+              </div>
+            </ListGroup.Item>
 
-      <ListGroup.Item as="li" className="mb-2 px-3">
-        <div className="row align-items-center">
-          <div className="col-sm-4 col-md-4 col-lg-4">
-            
-            <PiNumberSquareFiveFill style={{ fontSize:'10rem', color:'black' }} />
-          </div>
-          <div className="col-sm-8 col-md-8 col-lg-8 mt-3" style={{ fontSize: '14px' }}>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quisquam cumque rem. Quaerat nemo alias corporis sapiente nisi debitis, cum officia quod ea porro dolor quia dolorum explicabo eveniet obcaecati!</p>
-          </div>
-        </div>
-      </ListGroup.Item>
+            <ListGroup.Item as="li" className="my-3">
+              <div className="row align-items-center">
+                <div className="col-3">
+                  <PiNumberSquareFive style={{ fontSize: '5rem', color: 'black' }} />
+                </div>
+                <div className="col-9 mt-3" style={{ fontSize: '14px' }}>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quisquam cumque rem. Quaerat nemo alias corporis sapiente nisi debitis, cum officia quod ea porro dolor quia dolorum explicabo eveniet obcaecati!</p>
+                </div>
+              </div>
+            </ListGroup.Item>
 
-      <ListGroup.Item as="li" className="mb-2 px-3">
-        <div className="row align-items-center">
-          <div className="col-sm-4 col-md-4 col-lg-4">
-            <PiNumberSquareSixFill style={{ fontSize:'10rem', color:'black' }} />
-          </div>
-          <div className="col-sm-8 col-md-8 col-lg-8 mt-3" style={{ fontSize: '14px' }}>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quisquam cumque rem. Quaerat nemo alias corporis sapiente nisi debitis, cum officia quod ea porro dolor quia dolorum explicabo eveniet obcaecati!</p>
-          </div>
+            <ListGroup.Item as="li" className="my-3">
+              <div className="row align-items-center">
+                <div className="col-3">
+                  <PiNumberSquareSix style={{ fontSize: '5rem', color: 'black' }} />
+                </div>
+                <div className="col-9 mt-3" style={{ fontSize: '14px' }}>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quisquam cumque rem. Quaerat nemo alias corporis sapiente nisi debitis, cum officia quod ea porro dolor quia dolorum explicabo eveniet obcaecati!</p>
+                </div>
+              </div>
+            </ListGroup.Item>
+          </ListGroup>
         </div>
-      </ListGroup.Item>
-    </ListGroup>
-            </div>
-</div>
+      </div>
 </div>
 {/**End STATS List Group container*/}
 </motion.div>

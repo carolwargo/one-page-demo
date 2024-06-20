@@ -46,10 +46,10 @@ const scrollToTop = () => {
     >
       <div className="text-center">  {/* Center align text */}
       <div className=" w3-content">
-         <h1 className="glowing-brand text-blue">
-            <span className="w3-text-blue fw-bold" style={{fontSize:'4rem'}}>CONSCRIBE</span>.</h1>
+         <h1 className="glowing-brand text-pink">
+            <span className="w3-text-pink fw-bold" style={{fontSize:'4rem'}}>CONSCRIBE</span>.</h1>
          <h2 className="align-items-center mb-4 text-black fw-bold w3-padding-16"> PROVIDING CONTROLLED
-<span className="glowing-text text-blue fw-bold"><i> RECRUITING STRATEGIES & PLATFORMS</i></span> FOR STUDENT-ATHELETES. 
+<span className="glowing-text text-pink fw-bold"><i> RECRUITING STRATEGIES & PLATFORMS</i></span> FOR STUDENT-ATHELETES. 
         </h2>
 <br />
 

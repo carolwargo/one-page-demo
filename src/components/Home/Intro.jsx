@@ -47,10 +47,10 @@ React.useEffect(() => {
             <hr />
      
             <h3 className="align-items-center mb-4"> PROVIDING 
-<b className="w3-text-blue fw-bolder"> CONTROLLED MARKETING STRATEGIES</b> FOR STUDENT-ATHELETES. 
+<b className="w3-text-pink fw-bolder"> CONTROLLED MARKETING STRATEGIES</b> FOR STUDENT-ATHELETES. 
          <br />Whether you need to find a new home or move on play at the next-level, be in control of your marketing.       
             </h3>
-            <h5 className="text-black">Whether you're an established player 
+            <h5 className="">Whether you're an established player 
           entering the transfer portal or a high school athlete aiming to 
           play at the next level, we empower you through the process with 
           high-quality content that you control. </h5>
@@ -63,10 +63,10 @@ React.useEffect(() => {
             <img src={Clay2} alt="clay" style={{ width: "100%" }} />
          </div>
          <div className="col-sm-12 col-md-7 col-lg-7">  
-          <h3><span className="w3-text-blue"><b>RECRUITMENT</b></span> IS PART OF THE PROCESS WHETHER WE LIKE IT OR NOT!</h3>
+          <h3><span className="w3-text-pink"><b>RECRUITMENT</b></span> IS PART OF THE PROCESS WHETHER WE LIKE IT OR NOT!</h3>
          <br />
          <TextTransition springConfig={presets.gentle}>
-   <h1 className="text-center align-items-center justify-content-center w3-text-blue fw-bolder">
+   <h1 className="text-center align-items-center justify-content-center w3-text-pink fw-bolder">
       {TEXTS[index % TEXTS.length]}
       </h1> 
     </TextTransition>

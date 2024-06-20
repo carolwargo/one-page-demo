@@ -6,7 +6,7 @@ import Services from "../components/Home/CustomCards";
 import Cards from "../components/Home/Cards";
 import Stats from "../components/Home/Stats";
 import Intro from "../components/Home/Intro";
-import Subscribe from "../components/Forms/Subscribe";
+//import Subscribe from "../components/Forms/Subscribe";
 
 const HomePage = () => {
   const { ref, inView } = useInView({
@@ -39,8 +39,6 @@ const HomePage = () => {
         <Stats />
    
 
-   
-        <Subscribe />
   
     </div>
   );

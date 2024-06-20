@@ -26,7 +26,7 @@ const HomeCards = () => {
   <h2 className='text-center w3-text-pink'><b>THINK OF THE POSSIBILITIES!</b></h2>
   <h3>Responsive image styling examples that enhance visual appeal without complicating or compromising function.</h3>
   </  div>
-
+  <div className='w3-container w3-content text-center mb-2'>
 <div className="row d-flex justify-content-center align-items-center w3-padding-large w3-padding-24">
   <div className=" col-sm-12 col-md-4 col-lg-4 flex-column position-relative p-0">
     {/* Image Container */}
@@ -68,7 +68,7 @@ const HomeCards = () => {
     </div>
   </div>
 </div>
-
+</div>
      </motion.div>
       </div>
 
