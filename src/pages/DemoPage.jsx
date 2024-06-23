@@ -1,37 +1,38 @@
 import React from "react";
 import "../App.css";
 import "@fortawesome/fontawesome-free/css/all.css";
-import ProfileBG from "../assets/images/ProfileBG.png";
-import Clay2 from "../assets/images/Clay2.png";
+import Clay2 from "../assets/images/Clay2.png"
+
 //import { FaImage } from "react-icons/fa6";
 
 const Blog = () => {
   return (
-    <div className="w3-light-grey">
-      <div className="w3-bar w3-white w3-wide w3-padding w3-card">
-        <a href="#backend" className="w3-bar-item w3-button">
-          <b>DW</b> RECRUIT
+    <div className="w3-light-grey" >
+      <div className="w3-bar w3-wide w3-padding  shadow">
+        <a href="#backend" className="w3-bar-item w3-button" style={{fontSize:'14px'}}>
+          <b>DALY</b> WARGO
         </a>
 
         <div className="w3-right">
-          <a href="#projects" className="w3-bar-item w3-button">
+          <a href="#projects" className="w3-bar-item w3-button" style={{fontSize:'14px'}}>
             BIO
           </a>
-          <a href="#about" className="w3-bar-item w3-button">
+          <a href="#about" className="w3-bar-item w3-button" style={{fontSize:'14px'}}>
             ATHLETICS
           </a>
-          <a href="#about" className="w3-bar-item w3-button">
+          <a href="#about" className="w3-bar-item w3-button" style={{fontSize:'14px'}}>
             ACADEMICS
           </a>
-          <a href="#about" className="w3-bar-item w3-button">
+          
+          <a href="#about" className="w3-bar-item w3-button" style={{fontSize:'14px'}}>
             FILM
           </a>
-          <a href="#contact" className="w3-bar-item w3-button">
+          <a href="#contact" className="w3-bar-item w3-button" style={{fontSize:'14px'}}>
             CONTACT
           </a>
         </div>
-      </div>
-      <hr />
+      </div> 
+     
 
       {/*NOTES: 1. I certify I am in compliance... 2. Core Classes calculated... 3. Student pledge... 4. Metrics */}
       {/* nav start */}
@@ -58,15 +59,15 @@ const Blog = () => {
           <h1 className="w3-xxxlarge">
             <b>DALY WARGO</b>
           </h1>
-          <h5 className="w3-tag bg-secondary-subtle text-secondary p-2 border border-top">
+          <p className="w3-tag bg-secondary-subtle  p-2 ">
             VOLLEYBALL RECRUIT <b>|</b> CLASS of 2026 <b>|</b> Maryland <b>|</b>{" "}
             6'0" <b>|</b> Setter
-          </h5>
+          </p>
           {/** <hr className='justify-content-center my-2' style={{width:'50%', margin:'0 auto'}} />*/}
           <div>
             <a href="/" className="w3-button">
               <i
-                className="fab fa-facebook-official text-black"
+                className="fab fa-facebook-official "
                 style={{ fontSize: "1.5rem" }}
               ></i>
             </a>
@@ -90,57 +91,19 @@ const Blog = () => {
             </a>
           </div>
         </header>
-        <hr />
         {/* end header */}
 
-        {/* start image header */}
-        <header className="w3-display-container w3-wide" id="home">
-          <img
-            src={ProfileBG}
-            alt="daly-main"
-            style={{ maxWidth: "1600px", maxHeight: "1600px" }}
-          />
-          <div className="w3-display-left w3-padding-large">
-            <h1 className="w3-jumbo w3-text-white">
-              <b>Daly's Game</b>
-            </h1>
-            <p className="w3-text-white">
-              Subscribe to receive scheduling updates, track my progress, and
-              view my accomplishments.{" "}
-            </p>
-            <h6>
-              <button className="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off">
-                Subscribe
-              </button>
-            </h6>
-            <br />
-            <br />
-            <div className="text-primary p-lg-5">
-            <h3><u><b>DALY</b>- READ ME!!!!</u></h3>
-            <p><b>NOTES:</b> This is a start. We have pics, videos, content, etc. to add. Just want you to see the basic structure! </p>
-            <p><b>1. You picture will be the background pic for this section</b></p>
-            <p><b>2. This is a page on my "one page" recruit site I am building:</b></p>
-            <ul>
-                <li> If there are any styling issues, it is probably due to content you cannot see. So no worries.</li>
-                <li> Function; for example the like & subscribe buttons and download links will be integrated at the end if needed. So don't worry if they don't seem to work right now.</li>
-            </ul>
-            </div>
-          </div>
-        </header>
-        {/* end image header */}
-
         {/* start main layout */}
-        <div className="w3-row w3-padding w3-border">
+        <div className="w3-row w3-padding">
           {/* start main layout entries*/}
           <div className="w3-col l8 s12">
             {/* start entry 1*/}
             <div className="w3-container w3-white w3-margin w3-padding-large">
-              {/* start title div*/}
-              <div className="w3-center">
-                <h3>VIDEO TITLE</h3>
-                <h5>
-                  Video date, <span className="w3-opacity">Jan. 1,1111</span>
-                </h5>
+              <div className="w3-center w3-margin-top">
+            <h4>
+               HIGH SCHOOL SEASON <span className="w3-opacity" style={{fontSize:'1rem'}}>
+                  <br/>SOPHOMORE (2023)</span>
+                </h4>
               </div>
               {/* end title div*/}
               {/* start image entry*/}
@@ -159,48 +122,21 @@ const Blog = () => {
                   nisi itaque pariatur.
                 </p>
 
-                <p className="w3-left">
-                  <button className="w3-button w3-white w3-border">
-                    <b>
-                      <i className="fa fa-thumbs-up"></i>
-                      Like
-                    </b>
-                  </button>
-                </p>
-                <p className="w3-right">
-                  <button className="w3-button w3-black">
-                    <b> Replies</b> <span className="w3-tag w3-white"> 1</span>
-                  </button>
-                </p>
                 <p className="w3-clear"></p>
                 <div className="w3-row w3-margin-bottom" id="demo1" style={{}}>
-                  <hr />
-                  <div className="w3-col l2 m3">
-                    <img src={Clay2} alt="clay2" style={{ width: "90px" }} />
-                  </div>
-                  <div className="w3-col l10 m9">
-                    <h4>
-                      Coach Joe Blow{" "}
-                      <span className="w3-opacity w3-medium"> May 5, 5555</span>
-                    </h4>
-                    <p>"Great job, Daly...."</p>
-                  </div>
+             
                 </div>
               </div>
               {/* end entry 1*/}
             </div>
-            {/* start main layout entries container*/}
-            {/* endmain layout entries*/}
-            <hr />
 
             {/* start entry 2*/}
             <div className="w3-container w3-white w3-margin w3-padding-large">
-              {/* start title div*/}
-              <div className="w3-center">
-                <h3>VIDEO TITLE</h3>
-                <h5>
-                  Video date, <span className="w3-opacity">Jan. 1,1111</span>
-                </h5>
+              <div className="w3-center w3-margin-top">
+              <h4>
+               HIGH SCHOOL SEASON <span className="w3-opacity" style={{fontSize:'1rem'}}>
+                  <br/>SOPHOMORE (2023)</span>
+                </h4>
               </div>
               {/* end title div*/}
               {/* start image entry*/}
@@ -219,46 +155,22 @@ const Blog = () => {
                   nisi itaque pariatur.
                 </p>
 
-                <p className="w3-left">
-                  <button className="w3-button w3-white w3-border">
-                    <b>
-                      <i className="fa fa-thumbs-up"></i>
-                      Like
-                    </b>
-                  </button>
-                </p>
-                <p className="w3-right">
-                  <button className="w3-button w3-black">
-                    <b> Replies</b> <span className="w3-tag w3-white"> 1</span>
-                  </button>
-                </p>
                 <p className="w3-clear"></p>
                 <div className="w3-row w3-margin-bottom" id="demo1" style={{}}>
-                  <hr />
-                  <div className="w3-col l2 m3">
-                    <img src={Clay2} alt="clay2" style={{ width: "90px" }} />
-                  </div>
-                  <div className="w3-col l10 m9">
-                    <h4>
-                      Coach Joe Blow{" "}
-                      <span className="w3-opacity w3-medium"> May 5, 5555</span>
-                    </h4>
-                    <p>"Great job, Daly...."</p>
-                  </div>
+             
                 </div>
               </div>
+              {/* end entry 1*/}
             </div>
             {/* end entry 2*/}
 
             {/* start entry 3*/}
-            {/* start entry 2*/}
             <div className="w3-container w3-white w3-margin w3-padding-large">
-              {/* start title div*/}
-              <div className="w3-center">
-                <h3>VIDEO TITLE</h3>
-                <h5>
-                  Video date, <span className="w3-opacity">Jan. 1,1111</span>
-                </h5>
+              <div className="w3-center w3-margin-top">
+              <h4>
+               HIGH SCHOOL SEASON <span className="w3-opacity" style={{fontSize:'1rem'}}>
+                  <br/>SOPHOMORE (2023)</span>
+                </h4>
               </div>
               {/* end title div*/}
               {/* start image entry*/}
@@ -277,37 +189,13 @@ const Blog = () => {
                   nisi itaque pariatur.
                 </p>
 
-                <p className="w3-left">
-                  <button className="w3-button w3-white w3-border">
-                    <b>
-                      <i className="fa fa-thumbs-up"></i>
-                      Like
-                    </b>
-                  </button>
-                </p>
-                <p className="w3-right">
-                  <button className="w3-button w3-black">
-                    <b> Replies</b> <span className="w3-tag w3-white"> 1</span>
-                  </button>
-                </p>
                 <p className="w3-clear"></p>
                 <div className="w3-row w3-margin-bottom" id="demo1" style={{}}>
-                  <hr />
-                  <div className="w3-col l2 m3">
-                    <img src={Clay2} alt="clay2" style={{ width: "90px" }} />
-                  </div>
-                  <div className="w3-col l10 m9">
-                    <h4>
-                      Coach Joe Blow{" "}
-                      <span className="w3-opacity w3-medium"> May 5, 5555</span>
-                    </h4>
-                    <p>"Great job, Daly...."</p>
-                  </div>
+             
                 </div>
               </div>
+              {/* end entry 1*/}
             </div>
-            {/* end entry 2*/}
-
             {/* end entry 3*/}
           </div>
           {/* end entry col*/}
@@ -320,29 +208,35 @@ const Blog = () => {
                 className="w3-grayscale"
               />
               <div className="w3-container w3-black">
-                <h4>Daly Wargo</h4>
-                <p>
-                  Introduce yourself...Lorem ipsum dolor, sit amet consectetur
-                  adipisicing elit. Placeat, fuga quidem velit quas autem ut!
-                  Aliquam ea unde laborum temporibus architecto consequatur
-                  dicta ipsa sapiente repellendus? Commodi consequatur soluta
-                  esse!
-                </p>
+                <h5 className="w3-padding-top-16">DALY WARGO</h5>
+                <p style={{fontSize:'12px'}}><b>Class of 2026</b><br/>
+              </p>
               </div>
             </div>
-            <hr />
             {/* end about container */}
 
             <div className="w3-white w3-margin">
               <div className="w3-container w3-padding w3-black">
-                <h4>Student Profile</h4>
+                <h5> <i className="fas-fa-user"></i>PLAYER PROFILE</h5>
               </div>
               <div className="w3-container w3-white">
                 <div
-                  className="w3-container w3-display-container w3-light-grey w3-section"
+                  className="w3-container w3-display-container w3-light-grey w3-section d-flex justify-content-start align-items-center"
                   style={{ height: "200px" }}
                 >
-                  <span className="w3-display-middle">description here</span>
+                    <p><b>GRAD YEAR: </b>2026
+                    <br/>
+                    <b> HEIGHT: </b>5'9
+                   
+                    <br/>
+                    <b> POSITION:  </b>Setter
+                    <br/>
+                    <b> HOMETOWN: </b>Maryland 
+                    <br/>
+                    <b> HIGH SCHOOL:</b> Northern High School (Owings, MD)
+                    <br/>
+                    <b> SUMMER TEAM: </b>?
+                  </p>
                 </div>
               </div>
             </div>
@@ -351,14 +245,49 @@ const Blog = () => {
             {/* start advertising */}
             <div className="w3-white w3-margin">
               <div className="w3-container w3-padding w3-black">
-                <h4>Athletic Profile</h4>
+                <h5>PLAYER CONTACT</h5>
               </div>
               <div className="w3-container w3-white">
                 <div
-                  className="w3-container w3-display-container w3-light-grey w3-section"
-                  style={{ height: "200px" }}
+                  className="w3-container w3-display-container w3-light-grey w3-section align-items-center w3-margin-top"
+                  style={{ height: "150px" }}
                 >
-                  <span className="w3-display-middle">description here</span>
+                  <br />
+              <i
+                className="fas fa-envelope "
+              ></i> <b>EMAIL </b>
+               <a href="mailto:dalywargo@gmail.com" 
+               className="w3-margin-left">dalywargo@gmail.com
+
+            </a>
+               <br />
+
+               <i
+                className="fa-solid fa-square-phone"
+              ></i> <b>PHONE </b>
+               <a  href="telto: 1(123)456-7890" 
+               className="w3-margin-left">(301) 123-4567
+
+            </a>
+
+         
+            <br />
+            <br />
+            <p>Connect on social media: <a href="/" className="w3-button rounded px-1 py-2">
+              <i
+                className="fab fa-facebook "
+                style={{ fontSize: "1rem" }}
+              ></i>
+            </a>
+         
+              <a href="/" className="w3-button rounded px-1 py-2">
+              <i
+                className="fab fa-instagram "
+                style={{ fontSize: "1rem" }}
+              ></i>
+            </a> 
+
+            </p>
                 </div>
               </div>
             </div>

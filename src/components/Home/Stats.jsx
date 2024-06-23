@@ -41,7 +41,7 @@ const Stats = () => {
               <i>Stats</i> &
              <span style={{fontFamily:"Dancing Script"}}> Facts</span>
              </h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis et voluptas tempora! Repellendus excepturi quod fuga blanditiis quos. Magnam ipsum, aut fuga assumenda magni totam voluptatibus reiciendis laboriosam nihil autem!</p>
+          <p>Below you will find some key metrics to consider when aspiring to play at the next level. </p>
         </div>
         <div className="col-sm-12 col-md-6 col-lg-6">
          
@@ -63,7 +63,8 @@ const Stats = () => {
                   <h1 style={{ fontSize: '5rem', color: 'black' }}>7%</h1> 
                 </div>
                 <div className="col-9 mt-3" style={{ fontSize: '14px' }}>
-                  <p>College sports recruitment figures show that only about 7% of high school student-athletes end up competing in the NCAA. The latest data shows that from 7,200,000 high school athletes from all NCAA sports, just under 500,000 make it to the NCAA. And if you think that’s low, only about 2% of that 7% make it into the professional arena.</p>
+                  <p className="w3-text-pink"><b>Q: WHAT IS THE HIGH SCHOOL TO COLLEGE CONVERSION RATE?</b></p>
+                  <p>Only about 7% of high school student-athletes end up competing in the NCAA. The latest data shows that from 7,200,000 high school athletes from all NCAA sports, just under 500,000 make it to the NCAA. And if you think that’s low, only about 2% of that 7% make it into the professional arena.</p>
                 </div>
               </div>
             </ListGroup.Item>
@@ -74,7 +75,8 @@ const Stats = () => {
                   <PiNumberSquareTwo style={{ fontSize: '5rem', color: 'black' }} />
                 </div>
                 <div className="col-9 mt-3" style={{ fontSize: '14px' }}>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quisquam cumque rem. Quaerat nemo alias corporis sapiente nisi debitis, cum officia quod ea porro dolor quia dolorum explicabo eveniet obcaecati!</p>
+                <p className="w3-text-pink"><b>Q: DO GRADES REALLY MATTER?</b></p>
+                  <p></p>
                 </div>
               </div>
             </ListGroup.Item>
@@ -85,6 +87,7 @@ const Stats = () => {
                   <PiNumberSquareThree style={{ fontSize: '5rem', color: 'black' }} />
                 </div>
                 <div className="col-9 mt-3" style={{ fontSize: '14px' }}>
+                <p className="w3-text-pink"><b>Q: DO GRADES REALLY MATTER?</b></p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quisquam cumque rem. Quaerat nemo alias corporis sapiente nisi debitis, cum officia quod ea porro dolor quia dolorum explicabo eveniet obcaecati!</p>
                 </div>
               </div>
@@ -99,6 +102,7 @@ const Stats = () => {
                   <PiNumberSquareFour style={{ fontSize: '5rem', color: 'black' }} />
                 </div>
                 <div className="col-9 mt-3" style={{ fontSize: '14px' }}>
+                <p className="w3-text-pink"><b>Q: DO GRADES REALLY MATTER?</b></p>
                   <p>lit. Reprehenderit quisquam cumque rem. Quaerat nemo alias corporis sapiente nisi debitis, cum officia quod ea porro dolor quia dolorum explicabo eveniet obcaecati!</p>
                 </div>
               </div>
@@ -110,6 +114,7 @@ const Stats = () => {
                   <PiNumberSquareFive style={{ fontSize: '5rem', color: 'black' }} />
                 </div>
                 <div className="col-9 mt-3" style={{ fontSize: '14px' }}>
+                <p className="w3-text-pink"><b>Q: DO GRADES REALLY MATTER?</b></p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quisquam cumque rem. Quaerat nemo alias corporis sapiente nisi debitis, cum officia quod ea porro dolor quia dolorum explicabo eveniet obcaecati!</p>
                 </div>
               </div>
@@ -121,8 +126,10 @@ const Stats = () => {
                   <PiNumberSquareSix style={{ fontSize: '5rem', color: 'black' }} />
                 </div>
                 <div className="col-9 mt-3" style={{ fontSize: '14px' }}>
+                <p className="w3-text-pink"><b>Q: DO GRADES REALLY MATTER?</b></p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quisquam cumque rem. Quaerat nemo alias corporis sapiente nisi debitis, cum officia quod ea porro dolor quia dolorum explicabo eveniet obcaecati!</p>
                 </div>
+                <div className="card-footer text-end text-muted" style={{ fontSize: '10px'}}>updated: 6/22/2024</div>
               </div>
             </ListGroup.Item>
           </ListGroup>
