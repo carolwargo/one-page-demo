@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Clay2 from "../../assets/images/Clay2.png";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -6,7 +7,7 @@ import TextTransition, {presets} from "react-text-transition";
 const TEXTS = [ 'NCAA TRANSFERS', 'HIGH SCHOOL RECRUITS','TEAMS & COACHES'];
   
 
-const HomePage = () => {
+const Intro = () => {
   const { ref, inView } = useInView({
     triggerOnce: false, // Animation triggers only once
     threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
@@ -46,12 +47,12 @@ React.useEffect(() => {
             <h1 className='mb-3' >About <span style={{fontSize:"5rem"}} className="fw-bold">Con</span><span  style={{fontFamily:"Dancing Script", fontSize:"5rem"}}>Scribe</span></h1>
             <hr />
      
-            <h3 className="align-items-center mb-4"> PROVIDING 
-<b className="w3-text-pink fw-bolder"> CONTROLLED MARKETING STRATEGIES</b> FOR STUDENT-ATHELETES. 
-         <br />Whether you need to find a new home or move on play at the next-level, be in control of your marketing.       
+            <h3 className="align-items-center mb-4 "> PROVIDING 
+<b className="w3-text-pink fw-bolder"> CONTROLLED MARKETING STRATEGIES </b> 
+FOR STUDENT-ATHELETES.      
             </h3>
             <h5 className="">Whether you're an established player 
-          entering the transfer portal or a high school athlete aiming to 
+          entering the <Link to='/' className=" w3-hover-text-red"> transfer portal</Link> or a <Link to='/'>high school</Link> athlete aiming to 
           play at the next level, we empower you through the process with 
           high-quality content that you control. </h5>
             </div> 
@@ -85,4 +86,4 @@ React.useEffect(() => {
   );
 };
 
-export default HomePage;
+export default Intro;

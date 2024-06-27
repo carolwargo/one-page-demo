@@ -26,21 +26,23 @@ const sendEmail = (e) => {
     return (
 
 
-<div className="w3-container">
-<div className="w3-card w3-padding-large">
-<div className="w3-container">
-<h3 className="w3-border-light-grey w3-padding-16 fw-light"><b>CONTACT</b> US to get started!</h3>
-    <form ref={form} onSubmit={sendEmail}>
+
+<div className="w3-card w3-padding-small w3-padding-24 w3-round-xlarge">
+<div className="w3-container w3-content">
+<h5 className="w3-border-light-grey fw-light">Contact us to get started!</h5>
+    <form ref={form} onSubmit={sendEmail} >
       <input  className="form-control w3-section w3-border" 
      type="text" 
      name="user_name" 
      placeholder='Name'
+     style={{fontSize:'12px'}}
       />
       <input 
     className="form-control w3-section w3-border" 
       type="email" 
       name="user_email" 
       placeholder='Email'
+      style={{fontSize:'12px'}}
       />
   
   <textarea 
@@ -48,17 +50,18 @@ const sendEmail = (e) => {
   name="message" 
   placeholder='Type message...'
   rows='4'
+  style={{fontSize:'12px'}}
 />
 
-      <button 
-      className="w3-button w3-black w3-section" 
+      <button tag="a" className='btn w3-pink' size="lg"
       type="submit">
       <i className="fa fa-paper-plane"></i> SEND MESSAGE
       </button>
     </form>
+
 </div>
 </div>
-</div>
+
     );
 }
 

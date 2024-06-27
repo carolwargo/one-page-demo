@@ -5,7 +5,8 @@ import { useInView } from "react-intersection-observer";
 import Services from "../components/Home/CustomCards";
 import Cards from "../components/Home/Cards";
 import Stats from "../components/Home/Stats";
-import Intro from "../components/Home/Intro";
+//import Intro from "../components/Home/Intro";
+import ContactComponent from '../components/Home/ContactComponent'
 //import Subscribe from "../components/Forms/Subscribe";
 
 const HomePage = () => {
@@ -25,11 +26,9 @@ const HomePage = () => {
       >
       </motion.div>
 
-
-        <Intro />
-     
+     <div className="container-fluid w3-black">
         <About />
-   
+        </div>
         <Cards />
    
         <Services />
@@ -37,9 +36,9 @@ const HomePage = () => {
 
       
         <Stats />
-   
-
-  
+        <div className="container-fluid">
+<ContactComponent />
+  </div>
     </div>
   );
 };

@@ -1,9 +1,8 @@
 import React from "react";
 import "../App.css";
-import "@fortawesome/fontawesome-free/css/all.css";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import Clay2 from "../assets/images/Clay2.png"
-
-//import { FaImage } from "react-icons/fa6";
+import "@fortawesome/react-fontawesome";
 
 const Blog = () => {
   return (
@@ -208,9 +207,9 @@ const Blog = () => {
                 className="w3-grayscale"
               />
               <div className="w3-container w3-black">
-                <h5 className="w3-padding-top-16">DALY WARGO</h5>
-                <p style={{fontSize:'12px'}}><b>Class of 2026</b><br/>
-              </p>
+                <h4 className="w3-padding-top-16">DALY WARGO</h4>
+                <h5 style={{fontSize:'12px'}}><b>Class of 2026</b><br/>
+              </h5>
               </div>
             </div>
             {/* end about container */}
@@ -224,18 +223,26 @@ const Blog = () => {
                   className="w3-container w3-display-container w3-light-grey w3-section d-flex justify-content-start align-items-center"
                   style={{ height: "200px" }}
                 >
-                    <p><b>GRAD YEAR: </b>2026
+                    <p className="mt-2" style={{fontSize:'14px'}}>
+                      <b>Grad Year: </b>2026
                     <br/>
-                    <b> HEIGHT: </b>5'9
+                    <b> Height: </b>5'9
                    
                     <br/>
-                    <b> POSITION:  </b>Setter
+                    <b> Position:  </b>Setter
                     <br/>
-                    <b> HOMETOWN: </b>Maryland 
+                    <b> Hometown: </b>Owings, Maryland 
                     <br/>
-                    <b> HIGH SCHOOL:</b> Northern High School (Owings, MD)
+                    <b> High School:</b> Northern High School (Owings, MD)
                     <br/>
-                    <b> SUMMER TEAM: </b>?
+                   
+                    <b> Sunner Team: </b>?
+                    <br/>
+                    <b> NCAA Registered: </b>  
+                    <i className='fas fa-check-circle w3-margin-left w3-text-green'></i> Yes
+                    <span className="w3-margin-left"></span>
+                    <i className='fas fa-circle w3-margin-left w3-text-green'></i>  No
+                    <span className="w3-margin-left"></span>
                   </p>
                 </div>
               </div>
@@ -249,40 +256,37 @@ const Blog = () => {
               </div>
               <div className="w3-container w3-white">
                 <div
-                  className="w3-container w3-display-container w3-light-grey w3-section align-items-center w3-margin-top"
+                  className="w3-container w3-display-container w3-light-grey w3-section w3-margin-top"
                   style={{ height: "150px" }}
                 >
-                  <br />
-              <i
-                className="fas fa-envelope "
-              ></i> <b>EMAIL </b>
-               <a href="mailto:dalywargo@gmail.com" 
-               className="w3-margin-left">dalywargo@gmail.com
-
+             <div className="mt-2"></div>
+            <b>Email :</b> 
+            <a  href="telto: mailto:dalywargo@gmail.com" 
+              >    <span  className="w3-margin-left ">
+                dalywargo@gmail.com</span>
             </a>
                <br />
-
-               <i
-                className="fa-solid fa-square-phone"
-              ></i> <b>PHONE </b>
+              <b> Call :</b>
                <a  href="telto: 1(123)456-7890" 
-               className="w3-margin-left">(301) 123-4567
-
+              >  <span  className="w3-margin-left ">(301) 123-4567</span>
             </a>
 
          
             <br />
             <br />
-            <p>Connect on social media: <a href="/" className="w3-button rounded px-1 py-2">
+            <p><b>Connect on social media: </b>
+              <br />
+              <a href="/" className="w3-button rounded w3-blue px-2 shadow py-1 m-1">
               <i
-                className="fab fa-facebook "
+                className="fab fa-facebook w3-text-white "
                 style={{ fontSize: "1rem" }}
               ></i>
             </a>
          
-              <a href="/" className="w3-button rounded px-1 py-2">
+              <a href="/" className="w3-button rounded w3-pink  shadow m-1" 
+              style={{paddingRight:'9px', paddingLeft:'9px', paddingTop:'3.75px', paddingBottom:'3.75px'}}>
               <i
-                className="fab fa-instagram "
+                className="fab fa-instagram w3-text-white "
                 style={{ fontSize: "1rem" }}
               ></i>
             </a> 
@@ -296,52 +300,38 @@ const Blog = () => {
 
             <div className="w3-white w3-margin">
               <div className="w3-container w3-padding w3-black">
-                <h4>References</h4>
+                <h5>COACH CONTACT</h5>
               </div>
-              <ul className="w3-ul w3-hoverable w3-white">
-                <li className="w3-padding-16">
-                  <img
-                    src={Clay2}
-                    alt="clay"
-                    className="w3-left w3-margin-right"
-                    style={{ width: "50px" }}
-                  />
-                  <span className="w3-large">Metrics</span>
+              <ul className="w3-ul w3-white">
+                <li>
+                  <div className="row w3-padding-16">
+                  <span><b style={{fontSize:'1.25rem'}}>HIGH SCHOOL TEAM</b></span>
+                
+                  <div className="col-sm-12 col-md-6 col-lg-6">    
+                  <span>Joe Blow- <i style={{fontSize:'14px'}}>Head Coach Northern High School</i></span>
+                  </div>
+                  <div className="col-sm-12 col-md-6 col-lg-6" style={{fontSize:'14px'}}>
+                  <span><b>Phone:</b> 123456789</span> 
                   <br />
-                  <span>Sed mattis nunc</span>
+                  <span><b>Email:</b> emailcoach..com</span>
+                  <br />
+                     </div>
+                  </div>
                 </li>
-                <li className="w3-padding-16">
-                  <img
-                    src={Clay2}
-                    alt="clay"
-                    className="w3-left w3-margin-right"
-                    style={{ width: "50px" }}
-                  />
-                  <span className="w3-large">Metrics</span>
+                <li>
+                  <div className="row w3-padding-16">
+                  <span><b style={{fontSize:'1.25rem'}}>TRAVEL TEAM</b></span>
+                
+                  <div className="col-sm-12 col-md-6 col-lg-6" style={{fontSize:'14px'}}>    
+                  <span>Joe Blow- <i>Head Coach Northern High School</i></span>
+                  </div>
+                  <div className="col-sm-12 col-md-6 col-lg-6">
+                  <span><b>Phone:</b> 123456789</span> 
                   <br />
-                  <span>Sed mattis nunc</span>
-                </li>
-                <li className="w3-padding-16">
-                  <img
-                    src={Clay2}
-                    alt="clay"
-                    className="w3-left w3-margin-right"
-                    style={{ width: "50px" }}
-                  />
-                  <span className="w3-large">Metrics</span>
+                  <span><b>Email:</b> emailcoach..com</span>
                   <br />
-                  <span>Sed mattis nunc</span>
-                </li>
-                <li className="w3-padding-16">
-                  <img
-                    src={Clay2}
-                    alt="clay"
-                    className="w3-left w3-margin-right"
-                    style={{ width: "50px" }}
-                  />
-                  <span className="w3-large">Metrics</span>
-                  <br />
-                  <span>Sed mattis nunc</span>
+                     </div>
+                  </div>
                 </li>
               </ul>
             </div>
