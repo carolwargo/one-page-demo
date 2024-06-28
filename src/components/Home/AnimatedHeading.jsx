@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import '../../../App.css'; // Import your CSS file
+import '../../App.css'; // Import your CSS file
 import { useInView } from "framer-motion";
 
 

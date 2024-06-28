@@ -1,0 +1,26 @@
+/* Add this to your App.css or any CSS file */
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .img-container img {
+    width: 100%;
+    box-shadow: 1px 1px 10px rgba(7, 232, 244, 0.78);
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .img-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(149, 245, 250, 0.78);
+    animation: pulse 1s infinite;
+  }
+  

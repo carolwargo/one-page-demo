@@ -13,7 +13,7 @@ const CustomCards = () => {
   });
 
     return (
-<div className="container-fluid w3-amber">
+<div className="container-fluid">
       <motion.div
       ref={ref}
       initial={{ y: -20, opacity: 0.5 }}
@@ -40,7 +40,8 @@ const CustomCards = () => {
                 <small>Earth</small>
               </li>
               <li className="d-flex align-items-center">
-                <svg className="bi me-2" width="1em" height="1em"><use xlinkHref="#calendar3"/></svg>
+                <svg className="bi me-2" width="1em" height="1em">
+                  <use xlinkHref="#calendar3"/></svg>
                 <small>3d</small>
               </li>
             </ul>

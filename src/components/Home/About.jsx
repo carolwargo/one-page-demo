@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Def from '../../assets/images/Def.png';   
-//import AnimatedHeading from "../Home/AnimatedHeading";
+import Def6 from '../../assets/images/Def6.png';   
 import Website2 from '../../assets/images/Website2.png';
+import FlipCard from "../Cards/FlipCard";
+
 
 const About = () => {
   const { ref, inView } = useInView({
@@ -21,28 +23,48 @@ const About = () => {
       animate={inView ? { y: 0, opacity: 1 } : {}}
       exit={{ y: 20, opacity: 0.5 }}
       transition={{ duration: 0.8 }}
-      className="w3-padding-32  w3-black"
-    >
+      className="w3-padding-32">
 
        
      <div className="w3-container w3-content">
       
 {/**Start About Section*/}
       <div className="row w3-padding-32 justify-content-center align-items-center">
-    
-        
-      <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-large">
-     
-          <img src={Def} alt="about" style={{ width: "100%" }}  
-          className='shadow shadow-5-strong w3-round-xlarge'/>
-        </div>
-        
-        <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-large">
-        <h6>WHAT'S WITH THE NAME?</h6>
-          <p>Conscribe- 'to enlist; voluntarily or by force.' Playing at the next level is a choice. However, enlisting in the recruitment process is not.
-          Strategic marketing through a controlled platform allows student-athletes to showcase their academic and athletic achievements on their own terms. Conscribe is a platform that allows student-athletes to take control of their recruitment process and connect with college coaches.</p>
-        </div>
+        <FlipCard />
+        <div className="col-sm-12 col-md-7 col-lg-7 w3-padding-large">
       
+  
+      
+      <div className="content">
+        <section className="section">
+          
+          <h2>Playing at the next level is a choice. However, engaging in the recruitment process is essential.</h2>
+        </section>
+        
+        <section className="section mt-4">
+          <p>Conscribe empowers student-athletes to take charge of their recruitment journey. Our strategic marketing platform enables them to showcase their academic and athletic achievements on their own terms, connecting directly with college coaches. Take control of your future with Conscribe.</p>
+        </section>
+        
+        <div className="cta">
+          <p>Ready to take control of your recruitment journey?</p>
+         <Link to='/' className="w3-text-pink">
+     <b className="w3-margin-right"> Get Started Now</b> <i className="fas fa-arrow-right"></i>
+        
+          </Link> 
+        </div>
+      </div>
+
+     </div>
+           
+     <div className="col-sm-12 col-md-5 col-lg-5 w3-padding-large">
+
+     <img src={Def6} alt="about" 
+            style={{
+              width: "100%", 
+              boxShadow: "1px 1px 10px rgba(255, 255, 255, .4)"
+            }}
+            className=' w3-round-xlarge shadow-3-secondary'/>
+        </div>
       </div>
   
 <div className="row d-flex justify-content-center align-items-center w3-padding-large w3-padding-16">

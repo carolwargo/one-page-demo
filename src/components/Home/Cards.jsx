@@ -14,7 +14,7 @@ const HomeCards = () => {
   });
 
     return (
-      <div  className="container-fluid w3-pale-red">
+      <div  className="container-fluid">
 <motion.div
       ref={ref}
       initial={{ y: -20, opacity: 0.5 }}
