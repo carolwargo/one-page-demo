@@ -12,21 +12,20 @@ import WebPage from "./pages/WebPage.jsx";
 import SocialPage from "./pages/SocialPage.jsx";
 import Footer from "./components/Footer.jsx";
 import TestPage from "./pages/Test.jsx";
-import Header2 from "./components/Header/Header2.jsx";
 import TopNavLayout from './components/Layouts/TopNavLayout.jsx';
+import HomeLayout from './components/Layouts/HomeLayout.jsx';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter basename="/one-page-demo">
       <ErrorBoundary>
-  
-      <Header2/>
         <Routes>
           {/* Add a route for the home page */}
+          <Route element={<HomeLayout />} >
+          <Route path="/" element={<AboutPage />} />
+          </Route>
           <Route path="/" element={<HomePage />} />
-          
-        
           <Route element={<TopNavLayout />} >
           <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/about" element={<AboutPage/>} />

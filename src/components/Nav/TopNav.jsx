@@ -6,6 +6,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FaQuestionCircle } from "react-icons/fa";
 import { AiTwotoneMail } from "react-icons/ai";
 import { TbScreenShare } from "react-icons/tb";
+import SubscribeModal from '../Modal/SubscribeModal';
 
 const TopNavbar = () => {
   const [expanded, setExpanded] = useState(false);
@@ -36,9 +37,9 @@ const TopNavbar = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Link to="/" className="nav-link w3-text-black fw-bolder" 
+            <Link to="/" className="nav-link w3-text-pink fw-bold" 
             onClick={handleNavLinkClick}>Con
-            <span  style={{fontFamily:"Dancing Script"}}>Scribe</span></Link>
+           <b style={{fontFamily:"Dancing Script"}}>Scribe</b></Link>
 
           <Link to="/about" className="nav-link" style={{ color: "black" }}  onClick={handleNavLinkClick}>About</Link>
            <Link to="/resources" className="nav-link" style={{ color: "black" }}  onClick={handleNavLinkClick}>Resources</Link>
@@ -70,7 +71,7 @@ const TopNavbar = () => {
           </Nav>
           <Nav className='ml-auto'>
           <Link to="/demo" className="nav-link" onClick={handleNavLinkClick} style={{fontSize:'14px'}}>DEMO SITE<TbScreenShare className='mx-2' style={{fontSize:'16px'}}/></Link>
-         
+          <SubscribeModal />
             <Link to="/contact" className="nav-link" onClick={handleNavLinkClick}><AiTwotoneMail /></Link>
             <Link to="/help" className="nav-link" onClick={handleNavLinkClick}><FaQuestionCircle/></Link>
           </Nav>
