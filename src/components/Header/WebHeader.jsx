@@ -14,13 +14,19 @@ export default function WebHeader() {
           <div className='d-flex justify-content-center align-items-center h-100'>
             <div className='container text-white w3-padding-large'>
           <AnimatedHeading />
-          <h2 className='mb-4 mx-5'>
-  PROVIDING  CUSTOMIZED <span className='w3-text-blue' style={{ fontWeight: 'bold' }}>DIGITAL MARKETING </span> 
+          <div className="row">
+            <div className="col-sm-12 col-md-1 col-lg-1"></div>
+            <div className="col-sm-12 col-md-10 col-lg-10">
+          <h2 className='mb-4 mx-3'>
+  PERSONALIZED <span className='w3-text-blue' style={{ fontWeight: 'bold', textShadow:' -1px 1px 3px yellow' }}>RECRUITING WEBSITES </span> 
    FOR STUDENT-ATHLETES & TEAMS ALIKE.
-</h2> <p className='px-4 w3-hide-small'>Click <span className='w3-text-yellow'><i>LEARN MORE</i></span>  to explore <span className='w3-text-yellow' style={{ fontWeight:'bold'}}> <i>CONTROLLED MARKETING</i></span> and why it matters.</p>
-              <button tag="a" className='btn w3-yellow' size="lg">
+</h2> <p className='px-4 w3-hide-small'>Click <span className='w3-text-yellow'><i>LEARN MORE</i></span>  to explore our <span className='w3-text-yellow' style={{ fontWeight:'bold'}}> <i>CONTROLLED WEB PLATFORMS</i></span> and why they matter.</p>
+              <button tag="a" className='btn w3-yellow mt-3' size="lg">
                 Learn More
               </button>
+              </div>
+              <div className="col-sm-12 col-md-1 col-lg-1"></div>
+              </div>
             </div>
           </div>
         </div>
