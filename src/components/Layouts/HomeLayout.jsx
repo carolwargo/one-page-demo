@@ -4,7 +4,7 @@ import TopNav from '../Nav/TopNav';
 import Header2 from '../Header/Header2';
 
 
-const Layout = () => {
+const HomeLayout = () => {
   return (
     <div className="service-layout">
       <main>
@@ -16,4 +16,4 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default HomeLayout;

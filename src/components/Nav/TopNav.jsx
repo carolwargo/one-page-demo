@@ -44,9 +44,10 @@ const TopNavbar = () => {
           <Link to="/about" className="nav-link" style={{ color: "black" }}  onClick={handleNavLinkClick}>About</Link>
            <Link to="/resources" className="nav-link" style={{ color: "black" }}  onClick={handleNavLinkClick}>Resources</Link>
            <Link to="/services" className="nav-link" style={{ color: "black" }}  onClick={handleNavLinkClick}>Pricing</Link>
+           <Link to="/web" className="nav-link" style={{ color: "black" }}  onClick={handleNavLinkClick}>Web Page</Link>
             
             <NavDropdown
-              title="Services"
+              title="Services/LandingPages"
               id="basic-nav-dropdown"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
@@ -54,7 +55,7 @@ const TopNavbar = () => {
             >
               <div style={{ borderRadius: '5px' }} className="shadow">
                   <NavDropdown.Item 
-                as={Link} to="/web" className="text-black">Websites
+                as={Link} to="/website" className="text-black">Websites
                 </NavDropdown.Item>
                 <NavDropdown.Item 
                 as={Link} to="/graphics" className="text-black">Graphics

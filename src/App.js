@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
 
 import HomePage from "./pages/HomePage";
 import AboutPage from "./components/Home/About";
@@ -14,6 +15,9 @@ import Footer from "./components/Footer.jsx";
 import TestPage from "./pages/Test.jsx";
 import TopNavLayout from './components/Layouts/TopNavLayout.jsx';
 import HomeLayout from './components/Layouts/HomeLayout.jsx';
+import WebLayout from './components/Layouts/WebLayout.jsx';
+import Website from './pages/LandingPages/Website.jsx';
+
 
 function App() {
   return (
@@ -24,6 +28,10 @@ function App() {
           {/* Add a route for the home page */}
           <Route element={<HomeLayout />} >
           <Route path="/" element={<AboutPage />} />
+          </Route>
+              {/* Add a route for the home page */}
+              <Route element={<WebLayout />} >
+          <Route path="/website" element={<Website />} />
           </Route>
           <Route path="/" element={<HomePage />} />
           <Route element={<TopNavLayout />} >
@@ -36,6 +44,7 @@ function App() {
           <Route path="/web" element={<WebPage />} />
           <Route path="/social" element={<SocialPage />} />
           </Route>
+          
           {/* Add a catch-all route for handling errors */}
           <Route path="*" element={<NotFound />} />
         </Routes>

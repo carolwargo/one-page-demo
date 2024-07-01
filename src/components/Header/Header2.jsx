@@ -17,8 +17,9 @@ export default function Header2() {
           <h2 className='mb-4 mx-5'>
   PROVIDING  CUSTOMIZED <span className='w3-text-pink' style={{ fontWeight: 'bold' }}>DIGITAL MARKETING </span> 
    FOR STUDENT-ATHLETES & TEAMS ALIKE.
-</h2> <p className='px-4 w3-hide-small'>Click <span className='w3-text-pink'><i>LEARN MORE</i></span>  to explore <span className='w3-text-pink' style={{ fontWeight:'bold'}}> <i>CONTROLLED MARKETING</i></span> and why it matters.</p>
-              <button tag="a" className='btn w3-pink' size="lg">
+</h2>
+ <p className='px-4 w3-hide-small'>Click <span className='w3-text-pink'><i>LEARN MORE</i></span>  to explore <span className='w3-text-pink' style={{ fontWeight:'bold'}}> <i>CONTROLLED MARKETING</i></span> and why it matters.</p>
+              <button tag="a" className='btn w3-pink mt-4' size="lg">
                 Learn More
               </button>
             </div>
