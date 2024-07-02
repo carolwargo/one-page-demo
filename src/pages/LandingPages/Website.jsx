@@ -6,7 +6,6 @@ import '../../styles/features.css';
 import WebStepsTimeline from "../../components/Web/WebStepsTimeline";
 import WebOptions from "../../components/Web/WebOptions";
 
-
 const WebLanding = () => {
     const { ref, inView } = useInView({
         triggerOnce: false, // Animation triggers only once

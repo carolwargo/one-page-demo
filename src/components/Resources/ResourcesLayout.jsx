@@ -1,18 +1,18 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom'; // Correct import statement for Outlet
-import CatchingHeader from './CatchingHeader';
-import CatchingFooter from './CatchingFooter';
+import ResourcesHeader from './ResourcesHeader';
+import ResourcesFooter from './ResourcesFooter';
 
-function CatchingLayout() {
+function ResourcesLayout() {
   return (
     <div>
-      <CatchingHeader />
+      <ResourcesHeader />
       <main>
         <Outlet /> {/* Use Outlet as a self-closing component */}
       </main>
-      <CatchingFooter />
+      <ResourcesFooter />
     </div>
   );
 }
 
-export default CatchingLayout;
+export default ResourcesLayout;

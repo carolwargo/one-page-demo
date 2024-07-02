@@ -3,13 +3,13 @@ import React from 'react';
 import {motion } from 'framer-motion';
 import TextTransition, {presets} from "react-text-transition";
 import { Link } from 'react-router-dom';
-import CatchingBlog from '../components/Catching/CatchingBlog';
+import CatchingBlog from '../components/Resources/ResourcesBlog';
 import Clay2 from '../assets/images/Clay2.png';
 import Catch from '../assets/images/Catch.png';
 import Button from "react-bootstrap/Button";
 import Hit from "../assets/images/Hit.png";
 import CoverResize from '../assets/images/CoverResize.png';
-
+import ResourcesTabs from '../components/Resources/ResourcesTabs';
 
 
 const TEXTS = [ 'CATCH', 'BLOCK', 'THROW', 'LEAD!!'];
@@ -60,13 +60,12 @@ React.useEffect(() => {
   </div>
 </header>
 
-
-
-
+<div className="w3-container">
+<ResourcesTabs />
+</div>
 
 
         <div className='row w3-row-padding'>
-      
         <div className='w3-col l4 s12'>
         <div className="w3-display-container ">
         <div className='w3-card w3-white w3-margin-top w3-margin w3-grayscale'>

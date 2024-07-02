@@ -182,22 +182,20 @@ const WebOptions = () => {
   </symbol>
 </svg>
 
-<main className="w3-margin-top">
     {/*Start 3 Columns with HANGING Icons */}   
- <div className="w3-container w3-content w3-padding-32" id="hanging-icons">
- 
+ <div className="w3-container w3-content w3-padding-32">
     <h2 className="pb-2 w3-text-black border-bottom">Recruit Website Development Options</h2>
-   <h4  className="mt-3 mb-2"> Choosing Between a CMS and a Custom Application</h4>
-   
+   <h4  className="mt-3 mb-2"> Choosing Between a CMS and a Custom Application</h4>  
    <h6><i>Website Development Options Explained: CMS vs. Custom Application</i> </h6>
 When it comes to developing a website, selecting the right platform is crucial. Two popular options are Content Management Systems (CMS) and Custom Applications. Each option has its own strengths and is suited to different types of projects. Below, we explore the features, benefits, and ideal use cases for both CMS and React applications to help you make an informed decision.
     <div className="row g-4 py-5 row-cols-1 row-cols-lg-2 justify-content-center">
       <div className="col d-flex align-items-start">
-        <div className="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-        <BsPlugin style={{fontSize:'2rem', boxShadow:' -5px 0 10px yellow'}} className='w3-text-blue w3-round-xxlarge'/>
+        <div className="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 shadow">
+        <BsPlugin style={{fontSize:'2rem'}} className='w3-text-blue w3-round-xxlarge'/>
         </div>
         <div>
           <h4 className=" text-body-emphasis fw-bold">Content Management System</h4>
+       <p><b>OPTION #1</b></p>
        <p>A CMS is a software platform that allows users to manage and modify website content without needing specialized technical knowledge.</p>
           <a href="#cms" className="btn mt-2 w3-blue">
         LEARN MORE
@@ -205,11 +203,12 @@ When it comes to developing a website, selecting the right platform is crucial. 
         </div>
       </div>
       <div className="col d-flex align-items-start">
-        <div className="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-        <FaReact style={{fontSize:'2rem', boxShadow:' -5px 0 10px yellow'}} className='w3-text-blue w3-round-xxlarge'/>
+        <div className="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 shadow">
+        <FaReact style={{fontSize:'2rem'}} className='w3-text-blue w3-round-xxlarge'/>
         </div>
         <div>
           <h4 className=" text-body-emphasis fw-bold">Custom Application</h4>
+          <p><b>OPTION #2</b></p>
           <p>A custom React application is developed from scratch, offering complete flexibility and control over the website’s functionality and design.</p>
           <a href="#custom" className="btn mt-2 w3-blue">
         LEARN MORE
@@ -221,7 +220,63 @@ When it comes to developing a website, selecting the right platform is crucial. 
 
   </div>
 {/*End 3 Columns with HANGING Icons */}
+{/*Start 3 column Left align 6 right 3 each */}
+<div className="w3-container w3-content px-4 py-5">
+    <div className="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+      <div className="col d-flex flex-column align-items-start gap-2">
+      <h2 className="pb-2 text-black">Features</h2>
+        <h2 className="fw-bold text-body-emphasis">Content Management System</h2>
+        <p className="text-body-secondary"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, laudantium! Aliquam nulla cumque officiis rerum eligendi quam mollitia reprehenderit omnis unde pariatur asperiores in, odit quas officia hic nostrum autem.</p>
+        <a href="/" className="btn w3-blue shadow btn-lg">Primary button</a>
+      </div>
 
+    
+      <div className="col">
+        <div className="row row-cols-1 row-cols-sm-2 g-4">
+          <div className="col d-flex flex-column gap-2">
+            <div className="feature-icon-small d-inline-flex align-items-center justify-content-center w3-blue bg-gradient fs-4 rounded-3 shadow">
+              <svg className="bi" width="1em" height="1em">
+                <use xlinkHref="#collection" />
+              </svg>
+            </div>
+            <h4 className="fw-semibold mb-0 text-body-emphasis">User-Friendly</h4>
+            <p className="text-body-secondary" style={{fontSize:'14px'}}>Designed for non-technical users and easy of use for content creation and management.</p>
+          </div>
+
+          <div className="col d-flex flex-column gap-2">
+            <div className="feature-icon-small d-inline-flex align-items-center justify-content-center w3-blue bg-gradient fs-4 rounded-3 shadow">
+              <svg className="bi" width="1em" height="1em">
+                <use xlinkHref="#gear-fill" />
+              </svg>
+            </div>
+            <h4 className="fw-semibold mb-0 text-body-emphasis">Built-ins</h4>
+            <p className="text-body-secondary" style={{fontSize:'14px'}}>Offers pre-designed templates and themes to quickly set up a website.</p>
+          </div>
+
+          <div className="col d-flex flex-column gap-2">
+            <div className="feature-icon-small d-inline-flex align-items-center justify-content-center w3-blue bg-gradient fs-4 rounded-3 shadow">
+              <svg className="bi" width="1em" height="1em">
+                <use xlinkHref="#speedometer" />
+              </svg>
+            </div>
+            <h4 className="fw-semibold mb-0 text-body-emphasis">Content Editing</h4>
+            <p className="text-body-secondary" style={{fontSize:'12px'}}>WYSIWYG (What You See Is What You Get) editors for content creation and formatting.</p>
+          </div>
+
+          <div className="col d-flex flex-column gap-2">
+            <div className="feature-icon-small d-inline-flex align-items-center justify-content-center w3-blue bg-gradient fs-4 rounded-3 shadow">
+              <svg className="bi" width="1em" height="1em">
+                <use xlinkHref="#table" />
+              </svg>
+            </div>
+            <h4 className="fw-semibold mb-0 text-body-emphasis">Integrated Features</h4>
+            <p className="text-body-secondary" style={{fontSize:'12px'}}>Often includes built-in features like SEO tools, and social media integration.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {/*End 3 column Left align 6 right 3 each */}
 
 
 {/*Start 3 Columns with Icons 
@@ -507,7 +562,7 @@ When it comes to developing a website, selecting the right platform is crucial. 
     </div>
   </div>
   {/*End 3 column Left align 6 right 3 each */}
-</main> 
+
     </motion.div>
     </div>
   );

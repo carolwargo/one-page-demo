@@ -18,12 +18,16 @@ export default function WebHeader() {
             <div className="col-sm-12 col-md-1 col-lg-1"></div>
             <div className="col-sm-12 col-md-10 col-lg-10">
           <h2 className='mb-4 mx-3'>
-  PERSONALIZED <span className='w3-text-blue' style={{ fontWeight: 'bold', textShadow:' -1px 1px 3px yellow' }}>RECRUITING WEBSITES </span> 
+  PERSONALIZED <span className='w3-text-blue' style={{ fontWeight: 'bold', textShadow:' -1px 1px 13px yellow' }}>RECRUITING WEBSITES </span> 
    FOR STUDENT-ATHLETES & TEAMS ALIKE.
-</h2> <p className='px-4 w3-hide-small'>Click <span className='w3-text-yellow'><i>LEARN MORE</i></span>  to explore our <span className='w3-text-yellow' style={{ fontWeight:'bold'}}> <i>CONTROLLED WEB PLATFORMS</i></span> and why they matter.</p>
-              <button tag="a" className='btn w3-yellow mt-3' size="lg">
-                Learn More
+</h2>     
+<div className="container d-flex justify-content-center w3-padding-16 mb-3">
+      <button  className='btn w3-yellow fw-bold px-5 hover-zoom' 
+       style={{ fontWeight: 'bold', boxShadow:' -1px 1px 13px white' }}
+       >
+     learn more
               </button>
+            </div>
               </div>
               <div className="col-sm-12 col-md-1 col-lg-1"></div>
               </div>
