@@ -9,8 +9,7 @@ const SimpleTimeline = () => {
 
   return (
 <ErrorBoundary>
-<div className="w3-container w3-content w3-padding-32 shadow "
-    style={{ backgroundImage: 'linear-gradient(to bottom right, #2196F3, black, black, lightblue, #2196F3, black, #2196F3 )'}}>
+<div className="w3-container w3-content w3-padding-32 shadow ">
   
       <div className="w3-container">
     <div className="row d-flex justify-content-center align-items-center ">

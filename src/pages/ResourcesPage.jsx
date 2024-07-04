@@ -16,11 +16,11 @@ function ResourcesPage() {
           initial={{ y: -20, opacity: 0}}
           animate={{y: 0, opacity: 1}}
           exit={{y: 20, opacity: 0}}
-          className="resources w3-black"
+          className="resources"
           
           >
 <header
-  className="w3-black w3-margin-bottom d-flex justify-content-center align-items-center"
+  className="w3-margin-bottom d-flex justify-content-center align-items-center"
   style={{
     position: "relative",
     backgroundImage: `url(${CoverResize})`,
