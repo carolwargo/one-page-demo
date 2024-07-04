@@ -1,34 +1,19 @@
 import React from 'react';
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import { TbCircleNumber1Filled } from "react-icons/tb";
 import { TbCircleNumber2Filled} from "react-icons/tb";
 import { TbCircleNumber3Filled } from "react-icons/tb";
-import WebContactForm from "../../components/Web/WebContactForm";
+import WebForm from "../../components/Web/WebForm";
+import ErrorBoundary from '../ErrorBoundary';
 
 const SimpleTimeline = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: false, // Animation triggers only once
-    threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
-  });
-  return (
-  
 
-      <motion.div
-        ref={ref}
-        initial={{ y: -20, opacity: 0.5 }}
-        animate={inView ? { y: 0, opacity: 1 } : {}}
-        exit={{ y: 20, opacity: 0.5 }}
-        transition={{ duration: 0.8 }}
-      >
-      
-<div>
- 
-<div className="w3-container w3-content w3-padding-32 shadow w3-padding-large"
+  return (
+<ErrorBoundary>
+<div className="w3-container w3-content w3-padding-32 shadow "
     style={{ backgroundImage: 'linear-gradient(to bottom right, black,  #2196F3, black )'}}>
   
-      <div className="w3-container w3-content">
-    <div className="row d-flex justify-content-center align-items-center w3-padding-large">
+      <div className="w3-container">
+    <div className="row d-flex justify-content-center align-items-center ">
     <div className="col-sm-12 col-md-5 col-lg-5 flex-column text-white">
     <div className="container-fluid">
     <h2 className="w3-text-white mb-2">Getting Started Made Easy.</h2>
@@ -56,7 +41,7 @@ const SimpleTimeline = () => {
             </div>
             <div className="col-sm-12 col-md-7 col-lg-7 flex-column">
             <div className="container-fluid">
-         <WebContactForm/>
+         <WebForm/>
            </div>
             </div>    
             <div className="container">
@@ -75,9 +60,7 @@ const SimpleTimeline = () => {
      </div>
  </div>
       </div>
-      </div>
-    </motion.div>
-  
+      </ErrorBoundary>
   );
 }
 

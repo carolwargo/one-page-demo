@@ -9,7 +9,7 @@ import {
 } from "react-share";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import post1 from "../../data/posts/catching-posts/catching-post1.json"; // Import the specific blog post
+import post1 from "../../data/posts/resources-posts/resources-post1.json"; // Import the specific blog post
 
 function CatchingBlogPosts() {
   const blogPost = post1;

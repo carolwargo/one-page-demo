@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 
 import '../../styles/features.css';
 import WebStepsTimeline from "../../components/Web/WebStepsTimeline";
-import WebOptions from "../../components/Web/WebOptions";
+//import WebOptions from "../../components/Web/WebOptions";
 
 const WebLanding = () => {
     const { ref, inView } = useInView({
@@ -28,7 +28,7 @@ const WebLanding = () => {
 
 <main className="w3-margin-top">
     <WebStepsTimeline/>
-<WebOptions />
+
 
     
 </main> 
