@@ -7,6 +7,7 @@ function ResourcesLayout() {
   return (
     <div>
       <ResourcesHeader />
+      
       <main>
         <Outlet /> {/* Use Outlet as a self-closing component */}
       </main>

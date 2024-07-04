@@ -10,7 +10,7 @@ const SimpleTimeline = () => {
   return (
 <ErrorBoundary>
 <div className="w3-container w3-content w3-padding-32 shadow "
-    style={{ backgroundImage: 'linear-gradient(to bottom right, black,  #2196F3, black )'}}>
+    style={{ backgroundImage: 'linear-gradient(to bottom right, #2196F3, black, black, lightblue, #2196F3, black, #2196F3 )'}}>
   
       <div className="w3-container">
     <div className="row d-flex justify-content-center align-items-center ">
@@ -23,14 +23,14 @@ const SimpleTimeline = () => {
     <div className='d-flex justify-content-start align-items-center'>
     <p> 
       <TbCircleNumber1Filled style={{fontSize:'1.75rem', color:'white',  }} 
-      className='w3-round-xxlarge'/> Fill out the form provided.</p>   
+      className='w3-round-xxlarge'/> Fill out the <i><b className='w3-text-blue'>INQUIRY FORM</b></i> provided.</p>   
    </div>
    <div className='d-flex justify-content-start align-items-center'>
-    <p className='mt-2'><TbCircleNumber2Filled style={{fontSize:'1.75rem', color:'white',  
+    <p><TbCircleNumber2Filled style={{fontSize:'1.75rem', color:'white',  
       }} className='w3-round-xxlarge'/> Collaborate with Designer.</p>
    </div>
    <div className='d-flex justify-content-start align-items-center'>
-   <p className='mt-2'> <TbCircleNumber3Filled  
+   <p> <TbCircleNumber3Filled  
    style={{
     fontSize:'1.75rem', 
     color:'white',  
@@ -40,7 +40,7 @@ const SimpleTimeline = () => {
             </div>
             </div>
             <div className="col-sm-12 col-md-7 col-lg-7 flex-column">
-            <div className="container-fluid">
+            <div className="container-fluid mt-3">
          <WebForm/>
            </div>
             </div>    
