@@ -214,7 +214,7 @@ const Pricing = () => {
           <div className="row">
             <div className="col-12 col-md">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" className="bi" viewBox="0 0 16 16">
-                <use xlinkHref="#bootstrap"/>
+             
               </svg>
               <small className="d-block mb-3 text-muted">© 2017–2021</small>
             </div>

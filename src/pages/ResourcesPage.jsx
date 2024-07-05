@@ -1,46 +1,18 @@
-// BlogPage.js
 import React from 'react';
 import {motion } from 'framer-motion';
-//import { Link } from 'react-router-dom';
-//import Clay2 from '../assets/images/Clay2.png';
-import CoverResize from '../assets/images/CoverResize.png';
-import ResourcesTabs from '../components/Resources/ResourcesTabs';
+import ResourcesBlog from '../components/Resources/ResourcesBlog';
 
   
 function ResourcesPage() {
 
   return (
-    <div>
-  
     <motion.div
           initial={{ y: -20, opacity: 0}}
           animate={{y: 0, opacity: 1}}
           exit={{y: 20, opacity: 0}}
-          className="resources"
-          
-          >
-<header
-  className="w3-margin-bottom d-flex justify-content-center align-items-center"
-  style={{
-    position: "relative",
-    backgroundImage: `url(${CoverResize})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    minHeight: '80vh',
-  }}
->
-  <div className="w3-content w3-container  text-center w3-padding-32 w3-margin-top">
-    <p>Keep it simple... Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quisquam odio illum ex? Totam porro, iusto reiciendis dolorem natus excepturi at dolor non explicabo facere repellendus unde, culpa reprehenderit beatae.</p>
- 
-  </div>
-</header>
+          className="resources">
+<ResourcesBlog />
 
-
-     
-
-<div className="w3-container">
-<ResourcesTabs />
-</div>
 
 {/** 
 <div className='row w3-row-padding'>
@@ -73,7 +45,6 @@ function ResourcesPage() {
       </div>
       */}
       </motion.div>
-    </div>
   );
 }
 

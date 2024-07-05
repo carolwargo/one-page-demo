@@ -9,30 +9,29 @@ const SimpleTimeline = () => {
 
   return (
 <ErrorBoundary>
-<div className="w3-container w3-content w3-padding-32 shadow ">
+<div className="w3-container w3-content w3-padding-32">
   
       <div className="w3-container">
     <div className="row d-flex justify-content-center align-items-center ">
-    <div className="col-sm-12 col-md-5 col-lg-5 flex-column text-white">
+    <div className="col-sm-12 col-md-5 col-lg-5 flex-column ">
     <div className="container-fluid">
-    <h2 className="w3-text-white mb-2">Getting Started Made Easy.</h2>
+    <h2 className=" mb-2">Getting Started Made Easy.</h2>
             <p>Protection from risks related to the day-to-day running of your small- from legal liability to property damage.</p>
            </div>
             <div className="container-fluid mt-4">
     <div className='d-flex justify-content-start align-items-center'>
     <p> 
-      <TbCircleNumber1Filled style={{fontSize:'1.75rem', color:'white',  }} 
+      <TbCircleNumber1Filled style={{fontSize:'1.75rem'}} 
       className='w3-round-xxlarge'/> Fill out the <i><b className='w3-text-blue'>INQUIRY FORM</b></i> provided.</p>   
    </div>
    <div className='d-flex justify-content-start align-items-center'>
-    <p><TbCircleNumber2Filled style={{fontSize:'1.75rem', color:'white',  
+    <p><TbCircleNumber2Filled style={{fontSize:'1.75rem'
       }} className='w3-round-xxlarge'/> Collaborate with Designer.</p>
    </div>
    <div className='d-flex justify-content-start align-items-center'>
    <p> <TbCircleNumber3Filled  
    style={{
     fontSize:'1.75rem', 
-    color:'white',  
     }} 
     className='w3-round-xxlarge'/> Relax while we work!</p>  
       </div>

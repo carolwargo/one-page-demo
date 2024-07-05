@@ -11,13 +11,17 @@ import ServicesPage from "./pages/ServicesPage.jsx";
 import GraphicsPage from "./pages/GraphicsPage.jsx";
 import WebPage from "./pages/WebPage.jsx";
 import SocialPage from "./pages/SocialPage.jsx";
-import Footer from "./components/Footer.jsx";
 import TestPage from "./pages/Test.jsx";
 import TopNavLayout from './components/Layouts/TopNavLayout.jsx';
 import HomeLayout from './components/Layouts/HomeLayout.jsx';
 import WebLayout from './components/Layouts/WebLayout.jsx';
 import Website from './pages/LandingPages/Website.jsx';
-
+import ResourcesLayout from './components/Layouts/ResourcesLayout.jsx';
+import Article1 from "./components/Resources/Articles/Article1.jsx";
+import Article2 from "./components/Resources/Articles/Article2.jsx";
+import Article3 from "./components/Resources/Articles/Article3.jsx";
+import ArticleLayout from './components/Layouts/ArticleLayout.jsx';
+import ArticleRendering from './components/Resources/Articles/ArticleRendering.jsx';
 
 function App() {
   return (
@@ -35,7 +39,9 @@ function App() {
           </Route>
           <Route path="/" element={<HomePage />} />
           <Route element={<TopNavLayout />} >
-          <Route path="/resources" element={<ResourcesPage />} />
+
+         
+       
           <Route path="/about" element={<AboutPage/>} />
           <Route path="/demo" element={<DemoPage />} />
           <Route path="/services" element={<ServicesPage />} />
@@ -45,10 +51,21 @@ function App() {
           <Route path="/social" element={<SocialPage />} />
           </Route>
           
+          <Route element={<ResourcesLayout />} >
+          <Route path="/resources" element={<ResourcesPage />} />
+          </Route>
+
+       
+      <Route element={<ArticleLayout />}>
+         <Route path="/" element={<ArticleRendering />} />
+        <Route path="article1" element={<Article1 />} />
+        <Route path="article2" element={<Article2 />} />
+        <Route path="article3" element={<Article3 />} />
+      </Route>
+
           {/* Add a catch-all route for handling errors */}
           <Route path="*" element={<NotFound />} />
         </Routes>
-        <Footer/>
         </ErrorBoundary>
       </BrowserRouter>
     </div>

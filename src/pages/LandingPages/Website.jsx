@@ -28,9 +28,7 @@ const WebLanding = () => {
 
 <main className="w3-margin-top">
     <WebStepsTimeline/>
-
-
-    
+  
 </main> 
     </motion.div>
     </div>

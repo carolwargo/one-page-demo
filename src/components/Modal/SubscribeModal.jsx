@@ -61,9 +61,9 @@ export default function App() {
       <MDBBtn onClick={() => setOpen(!open)} className='btn w3-pink' tag='a'><b>Subscribe</b></MDBBtn>
       <MDBModal open={open} setOpen={setOpen} tabIndex={-1}>
         <MDBModalDialog >
-          <MDBModalContent className='w3-pale-red'>
+          <MDBModalContent className='w3-pale-red w3-margin-top'>
             <div className='d-flex justify-content-end px-2'> 
-              <MDBBtn className='btn-close mt-2 p-1 border border-black border-3 shadow bg-white' style={{fontSize:'8px'}} color='light' onClick={() => setOpen(!open)}></MDBBtn>
+              <MDBBtn className='btn-close mt-2  border border-black border-3 shadow bg-white' style={{fontSize:'8px'}} color='light' onClick={() => setOpen(!open)}></MDBBtn>
             </div>
             <MDBModalBody className='text-black'>
         <MDBContainer className='d-flex justify-content-center align-items-center'>
